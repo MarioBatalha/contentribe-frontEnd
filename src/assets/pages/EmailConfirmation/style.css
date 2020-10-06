@@ -1,0 +1,96 @@
+.profile-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+    margin-top: 2px;
+}
+
+.profile-container header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container header span {
+    font-size: 20px;
+    margin-left: 24px;
+    color: #41414d;
+}
+
+.profile-container header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.profile-container h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    color: #41414d;
+}
+
+.profile-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.profile-container ul li {
+  display: flex;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;  
+}
+
+.email-confirmation {
+    width: 25rem;
+    height: 60px;
+    background: #F29D35;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700px;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+    margin-left: 22rem;
+}
+
+.emailNotification {
+    align-self: center;
+    margin-left: 27rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+.profile-container button:hover {
+    opacity: 0.8;
+}
+
+.profile-container strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+.profile-container p {
+    margin-top: 5px;
+}
+
+.profile-container p {
+    color: #737380;
+    line-height: 5pt;
+    font-size: 16px;
+    margin-top: 3px;
+}
+img {
+    width: 15rem;
+    height: 15rem;
+}
