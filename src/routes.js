@@ -12,6 +12,7 @@ import Request from '../src/assets/pages/Task'
 import NewRequest from '../src/assets/pages/NewRequest';
 import Lading from '../src/assets/pages/Lading';
 import NotFound from '../src/assets/components/NotFound';
+import Sign from '../src/assets/pages/SignUp';
 
 export default function Routes() {
     return (
@@ -22,6 +23,7 @@ export default function Routes() {
                 <Route path="/register/freelancer" component={RegisterFreelancer} />
                 <Route path="/register/company" component={RegisterCompany} />
 
+                <Route path="/sign" component={Sign} />
                 <Route path="/email/confirmation" component={EmailConfirmation} />
                 <Route path="/freelancer" component={ProfileFreelancer} />
                 <Route path="/task" component={ProfileCompany} />

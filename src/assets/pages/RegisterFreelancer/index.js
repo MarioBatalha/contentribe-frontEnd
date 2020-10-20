@@ -48,9 +48,9 @@ export default function Register() {
           <div className="content">
             <section>
                 <img src={LogoImg} alt="Contentribe" className="logoImg"/>
-                <h1>Conclua a  configuração da <br />
-                sua conta.</h1>
-                <p>Só mais algumas informações e já está.</p>
+                <h1>Configure a sua conta <br />
+                freelancer.</h1>
+                <p>Seja um freelancer contentribe e receba as melhores propostas.</p>
                 <p>Seja um profissional contentribe trabalhando connosco.</p>
            
 

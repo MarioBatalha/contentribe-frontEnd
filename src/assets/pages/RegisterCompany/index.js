@@ -6,7 +6,6 @@ import { FcGoogle } from 'react-icons/fc';
 import api from '../../../services/api';
 import './style.css';
 
-import LogoImg from '../../image/logo.png';
 
 export default function Register() {
   const [username, setUserName] = useState('');
@@ -45,10 +44,9 @@ export default function Register() {
         <div className="register-container">
           <div className="content">
             <section>
-                <img src={LogoImg} alt="Contentribe" className="logoImg"/>
-                <h1>Conclua a  configuração da <br />
-                sua conta.</h1>
-                <p>Só mais algumas informações e já está.</p>
+                <h1 className="logoImg">Contentribe</h1>
+                <h1>Crie a sua conta empresa</h1>
+                <p>E trabalhe com os melhores freelancers.</p>
                 <p>Para uma melhor experiência comece a produzir contéudos  na contentribe </p>
                 
            

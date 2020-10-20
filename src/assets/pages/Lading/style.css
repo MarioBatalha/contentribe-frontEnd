@@ -7,13 +7,20 @@
     color: #C2C2C2, #F29D35, #6920B0;
 }
 
-.container h2 {
+.container strong {
     justify-content: center;
     align-items: center;
-    color: #C2C2C2;
     font-style: normal;
+    color: #C2C2C2;
     margin-top: 5rem;
-    font-size: 24pt;
+    font-size: 30pt;
+}
+
+.container h3 {
+    color: #41414D;
+    font-style: normal;
+    font-size: 14pt;
+    margin-top: 3.4rem;
 }
 
 h4 {
@@ -26,10 +33,10 @@ h4 {
     font-size: 15pt;
 }
 
-.logo-image {
-    width: 10rem;
+.logo-container h1 {
+    margin-bottom: 15rem;
+    color: #41414D;
 }
-
 .buttons-container {
     display: flex;
     justify-content: center;
@@ -48,7 +55,7 @@ h4 {
     justify-content: center;
 
     text-decoration: none;
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .buttons-container a:first-child {
@@ -57,13 +64,17 @@ h4 {
 
 
 .buttons-container a.project {
-    background: #6920B0;
+    border: 1px solid #6920B0;
+    background-color: #6920B0;
+    border-radius: 3px;
     font-size: 18pt;
 
 }
 
 .buttons-container a.get-started {
     background: #F29D35;
+    border: 1px solid #F29D35;
+    border-radius: 3px;
     font-size: 18pt;
 }
 
@@ -92,14 +103,24 @@ h4 {
     display: inline;
 }
 
-.page-lading-content a{
+.page-lading-content .link-register {
+    background-color: #F29D35;
+    border: 1px solid #F29D35;
+    border-radius: 3px;
+}
+
+.page-lading-content a {
     padding: 10px;
     text-decoration: none;
     color: #C2C2C2;
 }
 
+.page-lading-content .link-register a {
+    color: #fff;
+}
+
 .page-lading-content a:hover {
-    border-bottom: 1px solid #6920B0;
+    color: #6920B0;
 }
 
 .lading-image {
@@ -147,34 +168,5 @@ h4 {
         font-size: 2.4rem;
     }
 
-    .category {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 24px;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 5rem;
-    }
-
-    .category-item {
-        display: flex;
-        background: #4A00E0;  
-        background: -webkit-linear-gradient(to right, #8E2DE2, #4A00E0); 
-        background: linear-gradient(to right, #8E2DE2, #4A00E0); 
-
-        padding: 24px;
-        border-radius: 8px;
-        position: relative; 
-        box-shadow: 0 0 100px rgba(0, 0, 0, 0.1); 
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .category-item label {
-        font-size: 20pt;
-        color: #c2c2c2;
-        text-align: center;
-        margin: auto 2rem;
-    }
 
 

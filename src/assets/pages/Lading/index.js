@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaUsersCog, FaPaintRoller, FaFileSignature, FaHandHoldingUsd, FaHeadset } from 'react-icons/fa';
 
 import './style.css';
 import '../../../global.css';
 
-import logoImg from '../../image/logo.png';
 import ladingImg from '../../image/fly.png';
 
 function Lading() {
@@ -14,18 +12,17 @@ function Lading() {
     <div id="page-lading">
       <div className="container">
         <div className="logo-container">
-          <img src={logoImg}
-          className="logo-image"
-          alt="Contentribe"
-          />
+          <h1>Contentribe</h1>
         </div>  
 
-        <h2>Um novo conceito de trabalho automatizado. <br /> 
-        Contentribe, gestão de contéudo com eficiência </h2>
+        <strong>Potencialize a sua equipa com os <br /> 
+        melhores profissionais criativos.</strong>
+
+        <h3>Encontre freelancers com segurança, administre todos os processos criativos e centralize toda a sua produção de conteúdo em um só lugar.</h3>
 
         <div className="buttons-container">
           <Link to="/register/company" className="get-started">
-          Produzir contéudo
+          Produzir contéudos
           </Link>
 
           <Link to="/register/freelancer" className="project">
@@ -47,9 +44,9 @@ function Lading() {
             Entrar
             </Link>
           </li>
-          <li>
-            <Link to="/notFound" >
-            Cadastrar
+          <li className="link-register">
+            <Link to="/sign" >
+            Cadastrar-se
             </Link>
           </li>
         </ul>
@@ -60,38 +57,7 @@ function Lading() {
       alt="um novo conceito de trabalho"
       />
     </div>
-    
   </div>
-
-  <h4>Comece um projecto numa das categorias</h4>
-  <div className="category">
-
-  <div className="category-item">
-    <FaHeadset size={40} color="#F29D35" />
-    <label>Consultória</label>
-  </div>
-
-  <div className="category-item">
-    <FaPaintRoller size={40} color="#F29D35" />
-    <label>Design Gráfico</label>
-  </div>
-
-  <div className="category-item">
-    <FaHandHoldingUsd size={40} color="#F29D35" />
-    <label>Marketing Digital</label>
-  </div>
-
-  <div className="category-item">
-    <FaUsersCog size={40} color="#F29D35" />
-    <label>Tradução</label>
-  </div>
-
-  <div className="category-item">
-    <FaFileSignature size={40} color="#F29D35" />
-    <label>Redação</label>
-  </div>
-  </div>
-
   </div>
   )
 }
