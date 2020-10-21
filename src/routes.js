@@ -13,6 +13,7 @@ import NewRequest from '../src/assets/pages/NewRequest';
 import Lading from '../src/assets/pages/Lading';
 import NotFound from '../src/assets/components/NotFound';
 import Sign from '../src/assets/pages/SignUp';
+import HowItWorks from '../src/assets/pages/HowItWorks';
 
 export default function Routes() {
     return (
@@ -23,6 +24,7 @@ export default function Routes() {
                 <Route path="/register/freelancer" component={RegisterFreelancer} />
                 <Route path="/register/company" component={RegisterCompany} />
 
+                <Route path="/HowItWorks" component={HowItWorks} />
                 <Route path="/sign" component={Sign} />
                 <Route path="/email/confirmation" component={EmailConfirmation} />
                 <Route path="/freelancer" component={ProfileFreelancer} />

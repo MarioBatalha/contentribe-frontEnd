@@ -1,0 +1,89 @@
+.page-sign-up {
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-sign-up  span{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-sign-up h1 {
+    text-align: center;
+    font: 700 38px 'Nunito', sans-serif;
+    margin-top: 10rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card-sign-up {
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+
+    background: #f0f0f5;
+    border-radius: 2px;
+    
+    margin: 1rem 28rem;
+}
+
+
+.card-sign-up-body {
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card-sign-up-body div {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-top: 5rem;
+}
+
+.card-sign-up-body span {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4.4rem;
+    font: 10pt normal;
+    color: #41414d;
+}
+
+.card-sign-up-body a{
+    margin: 6.4rem;
+    width: 50%;
+    height: 30px;
+    background: #6920B0;
+    border-radius: 25px;
+    color: #fff;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-left: 5.4rem;
+}
+
+.card-sign-up-footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12pt;
+    margin-top: 1.5rem;
+    color: #41414d;
+}
+
+.card-sign-up .card-sign-up-footer span {
+    margin-top: 10rem;
+}
+
+a {
+    text-decoration: none;
+}

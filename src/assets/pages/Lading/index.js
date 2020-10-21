@@ -35,7 +35,7 @@ function Lading() {
       <nav>
         <ul>
           <li>
-            <Link to="/notFound">
+            <Link to="/HowItWorks">
             Como funciona
             </Link>
           </li>

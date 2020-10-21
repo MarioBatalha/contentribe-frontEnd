@@ -78,13 +78,6 @@ h4 {
     font-size: 18pt;
 }
 
-.buttons-container a.project:hover {
-   opacity: 90%;
-}
-
-.buttons-container a.get-started:hover {
-    opacity: 90%;
-}
 
 .page-lading-content nav {
     position: relative;
