@@ -1,0 +1,103 @@
+.page-howItWorks {
+   
+}
+
+.page-howItWorks-section h1 {
+    font: 700 38px sans-serif;
+    margin-top: 2rem;
+    margin-left: 2.4rem;
+}
+
+.work {
+    display: flex;
+    align-content: center;
+    color: #41414d;
+}
+
+.work p {
+    color: #41414d;
+    margin-left: 2.4rem;  
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.work .first {
+    width: 50%;
+    height: 50%;
+    margin-left: 0;
+}
+
+.work .first h1{
+    font: 700 78px 'Nunito', sans-serif;
+    color: #c2c2c2;
+    margin-top: 5rem;
+}
+
+.work .second {
+    height: 50%;
+    width: 50%;
+}
+
+.work .second img {
+    width: 85%;
+    height: 85%;
+}
+
+.service {
+    display: flex;
+    align-content: center;
+    background-color: #FFF;
+    background-color: rgb(70, 10, 129);
+    color: #FFF;
+    height: 30%;
+}
+
+.service p {
+    color: #FFF;
+    margin-left: 2.4rem;  
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.service .first {
+    height: 50%;
+    width: 50%;
+}
+
+.service .second {
+    height: 50%;
+    width: 50%;
+}
+
+.service .second img {
+    width: 85%;
+    height: 85%;
+}
+
+.payment {
+    display: flex;
+    align-content: center;
+    background-color: #FFF;
+    color: #41414d;
+}
+.payment .first {
+    height: 50%;
+    width: 50%;
+}
+
+.payment .first img {
+    width: 85%;
+    height: 85%;
+}
+
+.payment .second {
+    height: 50%;
+    width: 50%;
+}
+
+.quote {
+    background-color: rgb(70, 10, 129);
+    color: #FFF;
+    height: 100%;
+    
+}
