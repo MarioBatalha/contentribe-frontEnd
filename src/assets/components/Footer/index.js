@@ -12,46 +12,46 @@ export default function Footer() {
             <div class="ft-main-item">
               <h2 class="ft-title">Sobre nós</h2>
               <ul>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Preços</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Carreiras</a></li>
+                <li><Link to="#">Serviços</Link></li>
+                <li><Link to="#">Portfolio</Link></li>
+                <li><Link to="#">Preços</Link></li>
+                <li><Link to="#">Parceiros</Link></li>
+                <li><Link to="#">Carreiras</Link></li>
               </ul>
             </div>
             <div class="ft-main-item">
               <h2 class="ft-title">Recursos</h2>
               <ul>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">eBooks</a></li>
-                <li><a href="#">Webinars</a></li>
+                <li><Link to="#">Docs</Link></li>
+                <li><Link to="#">Blog</Link></li>
+                <li><Link to="#">eBooks</Link></li>
+                <li><Link to="#">Webinars</Link></li>
               </ul>
             </div>
             <div class="ft-main-item">
               <h2 class="ft-title">Contactos</h2>
               <ul>
-                <li><a href="#">Ajudas</a></li>
-                <li><a href="#">Dicas de uso</a></li>
-                <li><a href="#">Advertise</a></li>
+                <li><Link to="#">Ajudas</Link></li>
+                <li><Link to="#">Dicas de uso</Link></li>
+                <li><Link to="#">Advertise</Link></li>
               </ul>
             </div>
           </section>
         
           <section class="ft-social">
             <ul class="ft-social-list">
-              <li><a href="#"><FaFacebook /></a></li>
-              <li><a href="#"><FaInstagram /></a></li>
-              <li><a href="#"><FaTwitter /></a></li>
-              <li><a href="#"><FaLinkedin /></a></li>
-              <li><a href="#"><FaYoutube /></a></li>
+              <li><Link to="#"><FaFacebook /></Link></li>
+              <li><Link to="#"><FaInstagram /></Link></li>
+              <li><Link to="#"><FaTwitter /></Link></li>
+              <li><Link to="#"><FaLinkedin /></Link></li>
+              <li><Link to="#"><FaYoutube /></Link></li>
             </ul>
           </section>
         
           <section class="ft-legal">
             <ul class="ft-legal-list">
-              <li><a href="#">Termos &amp; Condições</a></li>
-              <li><a href="#">Politica de privacidade</a></li>
+              <li><Link to="#">Termos &amp; Condições</Link></li>
+              <li><Link to="#">Politica de privacidade</Link></li>
               <li>&copy; 2020 Copyright Kuenda Digital</li>
             </ul>
           </section>

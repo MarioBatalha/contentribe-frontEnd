@@ -1,14 +1,19 @@
 import React from 'react';
+import HeaderCompany from '../../components/HeaderCompany';
 import MenuCompany from '../../components/MenuCompany';
+import Task from '../Task';
 import './style.css';
 
 export default function ProfileCompany() {
 
     return (
         <div className="profile-container">
-         <MenuCompany />
+          <HeaderCompany />
 
          <div className="profile-container-body">
+         <MenuCompany />
+
+         <Task />
 
          </div>
         </div>

@@ -4,7 +4,6 @@
     padding: 0 30px;
     margin: 32px auto;
     margin-top: 2px;
-    display: flex;
 }
 
 .profile-container header {
@@ -105,3 +104,6 @@ img {
     height: 15rem;
 }
 
+.profile-container-body {
+    display: flex;
+}

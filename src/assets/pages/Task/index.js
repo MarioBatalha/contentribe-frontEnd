@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaCoins, FaClock } from 'react-icons/fa';
-
-import MenuCompany from '../../components/MenuCompany';
+import { Link } from 'react-router-dom';
+import { FaPlus, FaCoins, FaClock } from 'react-icons/fa';
 import api from '../../../services/api';
 import './style.css';
 
@@ -22,8 +21,6 @@ export default function Task() {
       
     return(
        <div className="task-container">
-         <MenuCompany />
-
          <div className="task-card">
             <div className="task-card-header">
               <h2>Tradução do certificado de Habilitações Literárias</h2>
@@ -36,6 +33,12 @@ export default function Task() {
             </div>
         </div>  
         
+        <div className="task-menu">
+          <Link to="/new/request" className="button-add">
+              <FaPlus size={20} color="#F29D35" />
+              Adicionar uma tarefa
+          </Link>
+        </div>  
       </div>
     )
 } 
