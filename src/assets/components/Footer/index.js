@@ -36,14 +36,6 @@ export default function Footer() {
                 <li><a href="#">Advertise</a></li>
               </ul>
             </div>
-            <div class="ft-main-item">
-              <h2 class="ft-title">Fique actualizado</h2>
-              <p>Subscreva a nossa newsletter e fique actualizado das últimas notícias.</p>
-              <form>
-                <input type="email" name="email" placeholder=" ndereço de email" />
-                <input type="submit" value="Subscrever" />
-              </form>
-            </div>
           </section>
         
           <section class="ft-social">

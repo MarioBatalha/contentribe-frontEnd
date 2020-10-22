@@ -7,6 +7,10 @@ export default function ProfileCompany() {
     return (
         <div className="profile-container">
          <MenuCompany />
+
+         <div className="profile-container-body">
+
+         </div>
         </div>
     )
 }

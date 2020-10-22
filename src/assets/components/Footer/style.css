@@ -12,16 +12,17 @@ ul {
   padding-left: 0;
 }
 footer {
-  background-color: #41414d;
+  background-color: #6920B0;
   color: #c2c2c2;
   line-height: 1.5;
+  margin-top: 5rem;
 }
 footer a {
   text-decoration: none;
   color: #eee;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .ft-title {
   color: #fff;
@@ -54,10 +55,7 @@ body {
     justify-content: space-evenly;
   }
 }
-.ft-main-item {
-  padding: 1.25rem;
-  min-width: 12.5rem;
-}
+
 
 /* Footer main | Newsletter form */
 form {
@@ -70,7 +68,7 @@ input[type="email"] {
   margin-top: 0.3125rem;
 }
 input[type="submit"] {
-  background-color: #6920B0;;
+  background-color: #F29D35;
   color: #fff;
   cursor: pointer;
   border: 0;
@@ -90,16 +88,18 @@ input[type="submit"] {
 .ft-social-list li {
   margin: 0.5rem;
   font-size: 1.25rem;
+  text-decoration: none;
 }
 /* Footer legal */
 .ft-legal {
   padding: 0.9375rem 1.875rem;
-  background-color: #333;
+  background-color: #6920B0
 }
 .ft-legal-list {
   width: 100%;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
+  text-align: center;
 }
 .ft-legal-list li {
   margin: 0.125rem 0.625rem;

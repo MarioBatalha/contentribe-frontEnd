@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { FaPlus, FaCoins, FaClock } from 'react-icons/fa';
+import { FaCoins, FaClock } from 'react-icons/fa';
 
 import MenuCompany from '../../components/MenuCompany';
 import api from '../../../services/api';
@@ -35,14 +34,7 @@ export default function Task() {
                 <label><FaClock color="#6920B0" /> Duração: 15 dias úteis</label>
               </div>
             </div>
-        </div> 
-
-        <div className="task-menu">
-          <Link to="/new/request" className="button-add">
-              <FaPlus size={20} color="#F29D35" />
-              Adicionar uma tarefa
-          </Link>
-         </div>  
+        </div>  
         
       </div>
     )

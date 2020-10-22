@@ -12,11 +12,11 @@
     display: flex;
     align-content: center;
     color: #41414d;
+    margin-left: 2.4rem;
 }
 
 .work p {
-    color: #41414d;
-    margin-left: 2.4rem;  
+    color: #41414d;  
     text-align: justify;
     text-justify: inter-word;
 }
@@ -26,8 +26,22 @@
     height: 50%;
     margin-left: 0;
 }
+.work .first .first-button{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFF;
+    background-color: #6920B0;
+    border: 1px solid #6920B0;
+    border-radius: 3px;
+    margin-top: 18px;
+}
 
-.work .first h1{
+.work .first .first-button:hover {
+    filter: brightness(90%);
+}
+
+.work .first h2{
     font: 700 78px 'Nunito', sans-serif;
     color: #c2c2c2;
     margin-top: 5rem;
@@ -58,6 +72,13 @@
     margin-left: 2.4rem;  
     text-align: justify;
     text-justify: inter-word;
+}
+
+.service .first h2{
+    font: 700 48px 'Nunito', sans-serif;
+    color: #FFF;
+    margin-top: 5rem;
+    margin-left: 2.4rem;
 }
 
 .service .first {
@@ -99,9 +120,9 @@
     width: 50%;
 }
 
-.quote {
-    background-color: rgb(70, 10, 129);
-    color: #FFF;
-    height: 100%;
-    
+.payment .second h2{
+    font: 700 48px 'Nunito', sans-serif;
+    color: #C2C2C2;
+    margin-top: 5rem;
+    margin-left: 2.4rem;
 }

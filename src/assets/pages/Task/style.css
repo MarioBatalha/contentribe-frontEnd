@@ -5,10 +5,6 @@
     margin: 28px auto;
 }
 
-.task-menu {
-   margin: -15rem 15rem; 
-}
-
 .task-card-header {
     display: block;
     padding: 24px;
@@ -38,18 +34,4 @@
 
 .task-detail {
     margin-top: 1.5rem;
-}
-
-.button-add {
-    background: none;
-    border: 0;
-    color: #41414d;
-    font-size: 14pt;
-    cursor: pointer;
-    transition: color 0.2s;
-    float: right;
-    align-items: right;
-    list-style: none;
-    text-decoration: none;
-    margin: 2.3rem 0rem;
 }

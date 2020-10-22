@@ -5,6 +5,7 @@ import './style.css';
 import '../../../global.css';
 
 import ladingImg from '../../image/fly.png';
+import Footer from '../../components/Footer';
 
 function Lading() {
   return (
@@ -58,6 +59,7 @@ function Lading() {
       />
     </div>
   </div>
+  <Footer />
   </div>
   )
 }
