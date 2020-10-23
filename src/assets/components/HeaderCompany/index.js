@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import { FiBell, 
@@ -9,6 +9,7 @@ import LogoImg from '../../image/logo.png';
 import './style.css';
 
 export default function HeaderCompany() {
+  
   const history = useHistory();
 
   const companyUserName = localStorage.getItem('companyUserName');

@@ -13,6 +13,10 @@ import Lading from '../src/assets/pages/Lading';
 import NotFound from '../src/assets/components/NotFound';
 import Sign from '../src/assets/pages/SignUp';
 import HowItWorks from '../src/assets/pages/HowItWorks';
+import Hired from '../src/assets/pages/Hired';
+import Report from '../src/assets/pages/Report';
+import Payment from '../src/assets/pages/Payment';
+
 
 export default function Routes() {
     return (
@@ -30,6 +34,9 @@ export default function Routes() {
                 <Route path="/admin" component={ProfileAdmin} />
                 <Route path="/new/request" component={NewTask} />
                 <Route path="/company/profile" component={Task} />
+                <Route path="/company/report" component={Report} />
+                <Route path="/company/hired" component={Hired} />
+                <Route path="/company/payment" component={Payment} />
                 <Route path="/notFound" component={NotFound} />
                 
             </Switch>
