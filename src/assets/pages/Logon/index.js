@@ -5,7 +5,6 @@ import { FcGoogle } from 'react-icons/fc';
 import api from '../../../services/api';
 
 import './style.css';
-import LogoImg from '../../../assets/image/logo.png';
 import Authentication from '../../image/authentication.png';
 
 
@@ -31,10 +30,7 @@ export default function Logon() {
     return (
      <div className="logon-container">
        <section className="form">
-       <img src={LogoImg} 
-       alt="trabalho automatizado" 
-       className="logo"
-       />
+       <h1>Contentribe</h1>
 
        <form onSubmit={handleLogin}>
            <h1>Vamos começar !</h1>

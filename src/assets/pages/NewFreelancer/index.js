@@ -3,7 +3,6 @@ import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../../services/api';
-import LogoImg from '../../image/logo.png';
 import './style.css';
 
 export default function Profile() {
@@ -43,7 +42,7 @@ export default function Profile() {
         <div className="new-incident-container">
           <div className="content">
             <section>
-                <img src={LogoImg} alt="Um novo conceito de trabalho" />
+                <h1>Contentribe</h1>
                 <h1>Cadastrar um profissional</h1>
                 <p className="description"> Registre-se e faça parte da contentribe</p>
            

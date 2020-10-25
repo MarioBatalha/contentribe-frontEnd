@@ -23,7 +23,7 @@ export default function HeaderCompany() {
     return(
        <div className="menu-container">
           <header>
-            <img src={LogoImg} alt="Contentribe" />
+            <h1>Contentribe</h1>
             <span>Bem-vindo, {companyUserName}</span>
             
             <div className="menu">

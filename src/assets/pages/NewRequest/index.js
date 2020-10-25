@@ -47,7 +47,7 @@ export default function Profile() {
         <div className="new-incident-container">
           <div className="content">
             <section>
-                <img src={LogoImg} alt="Contentribe" />
+                <h1>Contentribe</h1>
                 <h1>Requisitar produção de contéudo</h1>
                 <p className="description">Descreva o tipo de profissional que deseja a sua tarefa específicamente</p>
            

@@ -18,7 +18,7 @@ export default function MenuFreelancer() {
     return(
        <div>
           <header>
-          <img src={LogoImg} alt="Contentribe" />
+          <h1>Contentribe</h1>>
           <span>Bem-vindo, {ongName}</span>
           
           <div className="menu">

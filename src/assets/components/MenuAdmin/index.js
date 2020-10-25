@@ -23,7 +23,7 @@ export default function MenuAdmin() {
     return(
        <div>
           <header>
-          <img src={LogoImg} alt="Contentribe" />
+          <h1>Contentribe</h1>
           <span>Bem-vindo, {companyName}</span>
           
           <div className="menu">
