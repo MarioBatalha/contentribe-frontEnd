@@ -7,6 +7,12 @@
     display: flex;
 }
 
+.logon-container section.form h1{
+    font: 700 38px 'Nunito' sans-serif;
+    margin-top: 2rem;
+    color: #41414d;
+}
+
 .logon-container section.form {
     width: 100%;
     max-width: 450px;

@@ -37,6 +37,7 @@ h4 {
     margin-bottom: 15rem;
     color: #41414D;
 }
+
 .buttons-container {
     display: flex;
     justify-content: center;
@@ -136,10 +137,6 @@ h4 {
         margin: 0;
     }
 
-    .logo-container h2 {
-        text-align: initial;
-        font-size: 3.6rem;
-    }
 
     .logo-container img {
         height: 100%;

@@ -3,9 +3,10 @@
 }
 
 .page-howItWorks-section h1 {
-    font: 700 38px sans-serif;
+    font: 700 28px 'Nunito' sans-serif;
     margin-top: 2rem;
     margin-left: 2.4rem;
+    color: #41414d;
 }
 
 .work {
