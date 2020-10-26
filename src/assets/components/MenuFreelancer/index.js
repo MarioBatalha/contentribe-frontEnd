@@ -2,8 +2,6 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiBell, FiUser, FiUsers, FiBook, FiBookmark, FiLayers } from 'react-icons/fi';
 
-import LogoImg from '../../image/logo.png';
-
 export default function MenuFreelancer() {
   const history = useHistory();
 

@@ -1,11 +1,10 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import { FiBell, 
          FiPower
 } from 'react-icons/fi';
 
-import LogoImg from '../../image/logo.png';
 import './style.css';
 
 export default function HeaderCompany() {

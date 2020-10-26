@@ -6,7 +6,6 @@ import { FcGoogle } from 'react-icons/fc';
 import api from '../../../services/api';
 import './style.css';
 
-import LogoImg from '../../image/logo.png';
 
 export default function Register() {
   const [username, setUserName] = useState('');

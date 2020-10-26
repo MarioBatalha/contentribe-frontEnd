@@ -7,8 +7,6 @@ import { MdPerson,
   MdClass,
 } from 'react-icons/md';
 
-import LogoImg from '../../image/logo.png';
-
 export default function MenuAdmin() {
   const history = useHistory();
 
