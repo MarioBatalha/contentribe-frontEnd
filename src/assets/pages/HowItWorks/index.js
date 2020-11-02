@@ -28,7 +28,7 @@ export default function HowItWorks() {
               <div className="first">
               <h2>Os serviços que precisa, quando precisa!</h2>
                 <p>Expanda as habilidades da sua equipa conforme necessário com uma elite de profissionais independentes espalhados pelo continente prontos para qualquer desafio.</p>
-                <Link>Comece agora</Link>
+                <Link to="" >Comece agora</Link>
               </div>
               <div className="second">
                 <img src={service} alt="works" />

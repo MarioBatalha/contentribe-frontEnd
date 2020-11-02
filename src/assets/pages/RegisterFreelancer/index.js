@@ -55,7 +55,7 @@ export default function Register() {
 
                 <Link className="back-link" to="/logon">
                   <FiArrowLeft  size={16} color="#6920B0" />
-                Voltar para o login
+                  Voltar para o login
                 </Link>
             </section>
 
@@ -63,9 +63,11 @@ export default function Register() {
 
             <div className="social-midia">
             <Link className="gmail" to="/email/confirmation">
-            <FcGoogle  className="IconGoogle" />
-            Continuar com uma conta google </Link>
+              <FcGoogle  className="IconGoogle" />
+              Continuar com uma conta google 
+            </Link>
             </div>
+            
             <p> Ou </p>
               <input placeholder="Nome completo"
               value={username}

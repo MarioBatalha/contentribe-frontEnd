@@ -48,7 +48,7 @@ export default function Profile() {
             <section>
                 <h1>Contentribe</h1>
                 <h1>Requisitar produção de contéudo</h1>
-                <p className="description">Descreva o tipo de profissional que deseja a sua tarefa específicamente</p>
+                <p className="description">Descreva a sua tarefa detalhadamente</p>
            
                 <Link className="back-link" to="/task">
                   <FiArrowLeft  size={16} color="#6920B0" />

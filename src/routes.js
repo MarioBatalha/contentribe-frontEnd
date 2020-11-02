@@ -38,7 +38,6 @@ export default function Routes() {
                 <Route path="/company/hired" component={Hired} />
                 <Route path="/company/payment" component={Payment} />
                 <Route path="/notFound" component={NotFound} />
-                
             </Switch>
         </BrowserRouter>
     )
