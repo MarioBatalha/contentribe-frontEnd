@@ -31,7 +31,7 @@ export default function Register() {
        country, 
        nif,
      }
-      await api.post('register/company', data);
+      await api.post('company', data);
 
       alert(`Registro feito com sucesso, pode aceder ao seu perfil fazendo o login.`);
 
