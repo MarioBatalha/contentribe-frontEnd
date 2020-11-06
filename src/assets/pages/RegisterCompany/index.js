@@ -32,7 +32,6 @@ export default function Register() {
        password,
        checkPassword,
        country, 
-       nif,
      }
       await api.post('company', data);
 
