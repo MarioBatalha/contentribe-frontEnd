@@ -6,6 +6,7 @@ import RegisterFreelancer from '../src/assets/pages/RegisterFreelancer';
 import RegisterCompany from '../src/assets/pages/RegisterCompany';
 import EmailConfirmation from '../src/assets/pages/EmailConfirmation';
 import ProfileFreelancer from '../src/assets/pages/ProfileFreelancer';
+import ProfileCompany from '../src/assets/pages/ProfileCompany';
 import ProfileAdmin from '../src/assets/pages/ProfileAdmin';
 import NewTask from '../src/assets/pages/NewRequest';
 import Lading from '../src/assets/pages/Lading';
@@ -30,6 +31,7 @@ export default function Routes() {
                 <Route path="/sign" component={Sign} />
                 <Route path="/email/confirmation" component={EmailConfirmation} />
                 <Route path="/freelancer" component={ProfileFreelancer} />
+                <Route path="/company/profile" component={ProfileCompany} />
                 <Route path="/admin" component={ProfileAdmin} />
                 <Route path="/new/request" component={NewTask} />
                 <Route path="/company/report" component={Report} />
