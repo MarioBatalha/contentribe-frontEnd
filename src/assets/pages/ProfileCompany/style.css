@@ -107,3 +107,41 @@ img {
 .profile-container-body {
     display: flex;
 }
+
+.task-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 28px auto;
+}
+
+.task-card-header {
+    display: block;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.task-card {
+    position: relative;
+    list-style: none;
+    background: #fff;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: auto;
+}
+
+.task-card-header label{
+    padding: auto;
+    margin: 2.5rem 2rem;
+
+}
+
+.task-card-header h2 {
+    color: #41414d;
+}
+
+.task-detail {
+    margin-top: 1.5rem;
+}
