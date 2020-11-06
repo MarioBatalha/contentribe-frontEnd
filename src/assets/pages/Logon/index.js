@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
-import { FaGooglePlusG } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 import api from '../../../services/api';
 
 import './style.css';
@@ -38,7 +38,7 @@ export default function Logon() {
            <div className="social-midia">
 
               <Link className="gmail" to="/notFound">
-              <FaGooglePlusG  className="IconGoogle" />
+              <FcGoogle  className="IconGoogle" />
               Continuar com uma conta google </Link>
            </div>
 

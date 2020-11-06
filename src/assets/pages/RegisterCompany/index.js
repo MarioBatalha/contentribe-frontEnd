@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'; 
-import { FaGooglePlusG } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 
 import api from '../../../services/api';
 import './style.css';
@@ -62,7 +62,7 @@ export default function Register() {
 
             <div className="social-midia">
             <Link className="gmail" to="/email/confirmation">
-            <FaGooglePlusG  className="IconGoogle" />
+            <FcGoogle  className="IconGoogle" />
             Continuar com uma conta google </Link>
             </div>
 
