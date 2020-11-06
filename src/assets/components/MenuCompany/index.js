@@ -10,12 +10,6 @@ export default function MenuCompany() {
         <div className="profile-container-menu">
           <div className="profile-option">
             <ul>
-              <li>
-                <Link to="/company/profile">
-                  <FiLayers size={20} color="#F29D35" />
-                  Tarefas
-                </Link>
-              </li>
 
               <li>
                 <Link to="/notFound">

@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'; 
-import { FcGoogle } from 'react-icons/fc';
+import { FaGooglePlusG } from 'react-icons/fa';
 
 import api from '../../../services/api';
 import './style.css';
 
 
 export default function Register() {
+  const [firstname, setFirstName] = useState('');
+  const [nickname, setNickName] = useState('');
   const [username, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [checkPassword, setCheckPassword] = useState('');
   const [country, setCountry] = useState('');
-  const [nif, setNif] = useState('');
 
 
   const history = useHistory();
@@ -24,6 +25,8 @@ export default function Register() {
     try {
 
      const data = {
+       firstname,
+       nickname,
        username,
        email,
        password,
@@ -60,17 +63,30 @@ export default function Register() {
 
             <div className="social-midia">
             <Link className="gmail" to="/email/confirmation">
-            <FcGoogle  className="IconGoogle" />
+            <FaGooglePlusG  className="IconGoogle" />
             Continuar com uma conta google </Link>
             </div>
 
             <p> Ou </p>
+
+              <input placeholder="Primeiro nome"
+              value={firstname} 
+              onChange={e => setFirstName(e.target.value)}
+              required
+              />
+
+              <input placeholder="Sobrenome"
+              value={nickname} 
+              onChange={e => setNickName(e.target.value)}
+              required
+              />
 
               <input placeholder="Nome da empresa"
               value={username} 
               onChange={e => setUserName(e.target.value)}
               required
               />
+
               <input type="email" placeholder="E-mail" 
               value={email}
               onChange={e => setEmail(e.target.value)}
@@ -92,12 +108,6 @@ export default function Register() {
               <input placeholder="País" 
               value={country}
               onChange={e => setCountry(e.target.value)}
-              required
-              />
-
-              <input type="number" placeholder="NIF" 
-              value={nif}
-              onChange={e => setNif(e.target.value)}
               required
               />
 
