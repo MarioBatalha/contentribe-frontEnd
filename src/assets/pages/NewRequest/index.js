@@ -6,12 +6,12 @@ import api from '../../../services/api';
 import './style.css';
 
 export default function Profile() {
-  const [title, setTitle] = useState('');
+  const [projectName, setProjectName] = useState('');
   const [category, setCategory] = useState('');
   const [lifetime, setLifetime] = useState('');
-  const [status, setStatus] = useState('');
   const [description, setDescription] = useState('');
-  const [createAt, setCreateAt] = useState('');
+  const [budget, setBudget] = useState('');
+  const [promotionalCode, setPromotionalCode] = useState('');
 
   const history = useHistory();
 
@@ -22,12 +22,12 @@ export default function Profile() {
 
     try {
       const data = {
-        title,
+        projectName,
         category,
         lifetime,
-        status,
         description,
-        createAt,
+        budget,
+        promotionalCode,
       }
       await api.post('request', data, {
         headers: {
@@ -57,9 +57,9 @@ export default function Profile() {
             </section>
 
             <form onSubmit={handleNewRequest}>
-              <input placeholder="Título"
-              value={title}
-              onChange={e => setTitle(e.target.value)}
+              <input placeholder="Nome do projecto"
+              value={projectName}
+              onChange={e => setProjectName(e.target.value)}
               />
 
               <input placeholder="Categória"
@@ -67,28 +67,31 @@ export default function Profile() {
               onChange={e => setCategory(e.target.value)}
               />
 
-              <input placeholder="Duração" 
+              <input placeholder="Prazo" 
               value={lifetime}
               onChange={e => setLifetime(e.target.value)}
               />
 
-              <input placeholder="Estado"
-              value={status}
-              onChange={e => setStatus(e.target.value)}
-              />
 
-              <textarea placeholder="Descrição do trabalho" 
+              <textarea placeholder="Descrição do projecto" 
               value={description}
               onChange={e => setDescription(e.target.value)}
               />
 
-              <input placeholder="Data"
-              type="date"
-              value={createAt}
-              onChange={e => setCreateAt(e.target.value)}
+              <input type="file"/>
+
+              <input placeholder="Orçamento"
+              type="number"
+              value={budget}
+              onChange={e => setBudget(e.target.value)}
               />
 
-              <button className="button" type="submit">Concluir o pedido</button>
+              <input placeholder="Inserir código promocional"
+              value={promotionalCode}
+              onChange={e => setPromotionalCode(e.target.value)}
+              />
+
+              <button className="button" type="submit">Submeter o pedido</button>
             </form>
           </div>
         </div>
