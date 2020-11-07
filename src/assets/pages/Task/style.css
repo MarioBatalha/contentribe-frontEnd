@@ -35,3 +35,26 @@
 .task-detail {
     margin-top: 1.5rem;
 }
+
+.create-task {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    z-index: 10;
+
+    width: 64px;
+    height: 64px;
+    background: #6920B0;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.2s;
+}
+
+.create-task:hover {
+    background: #6920B0;
+}
