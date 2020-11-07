@@ -46,7 +46,7 @@
     width: 64px;
     height: 64px;
     background: #6920B0;
-    border-radius: 20px;
+    border-radius: 25%;
 
     display: flex;
     justify-content: center;
@@ -56,5 +56,5 @@
 }
 
 .create-task:hover {
-    background: #6920B0;
+    background: rgb(105, 18, 192);
 }
