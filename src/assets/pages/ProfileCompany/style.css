@@ -99,12 +99,13 @@
     font-size: 16px;
     margin-top: 3px;
 }
+
+.profile-container .profile-container-body {
+    display: flex;
+}
+
 img {
     width: 15rem;
     height: 15rem;
-}
-
-.profile-container-body {
-    display: flex;
 }
 

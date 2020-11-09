@@ -17,9 +17,11 @@
     position: relative;
     list-style: none;
     background: #fff;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     width: 600px;
     height: auto;
+    border-radius: 10px;
+    border: 1px solid #1111132a;
 }
 
 .task-card-header label{

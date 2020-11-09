@@ -1,7 +1,9 @@
 import React from 'react';
+
 import HeaderCompany from '../../components/HeaderCompany';
 import MenuCompany from '../../components/MenuCompany';
 import Task from '../Task';
+import './style.css';
 
 export default function ProfileCompany() {
    
@@ -10,9 +12,11 @@ export default function ProfileCompany() {
           <HeaderCompany />
 
         <div className="profile-container-body">
-          <MenuCompany />
 
-          <Task />
+            <MenuCompany />
+    
+            <Task />
+
         </div>
       </div>
     )

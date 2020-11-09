@@ -12,6 +12,7 @@ import NewTask from '../src/assets/pages/NewRequest';
 import Lading from '../src/assets/pages/Lading';
 import NotFound from '../src/assets/components/NotFound';
 import Sign from '../src/assets/pages/SignUp';
+import InfoProfileCompany from '../src/assets/components/InfoProfileCompany';
 import HowItWorks from '../src/assets/pages/HowItWorks';
 import Hired from '../src/assets/pages/Hired';
 import Report from '../src/assets/pages/Report';
@@ -34,6 +35,7 @@ export default function Routes() {
                 <Route path="/company/profile" component={ProfileCompany} />
                 <Route path="/admin" component={ProfileAdmin} />
                 <Route path="/new/request" component={NewTask} />
+                <Route path="/profile" component={InfoProfileCompany} />
                 <Route path="/company/report" component={Report} />
                 <Route path="/company/hired" component={Hired} />
                 <Route path="/company/payment" component={Payment} />

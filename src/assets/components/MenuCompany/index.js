@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiLayers, FiClipboard, FiUsers, FiPrinter} from 'react-icons/fi';
-import { GiMoneyStack } from 'react-icons/gi'
-
+import { FiCreditCard, FiClipboard, FiUsers, FiPrinter} from 'react-icons/fi';
 import './style.css';
 
 export default function MenuCompany() {
@@ -12,7 +10,7 @@ export default function MenuCompany() {
             <ul>
 
               <li>
-                <Link to="/notFound">
+                <Link to="/profile">
                   <FiUsers size={20} color="#F29D35" />
                   Perfil
                 </Link>
@@ -27,7 +25,7 @@ export default function MenuCompany() {
               
               <li>
                 <Link to="/company/payment">
-                  <GiMoneyStack size={20} color="#F29D35" />
+                  <FiCreditCard size={20} color="#F29D35" />
                   Pagamentos
                 </Link>
               </li>

@@ -68,7 +68,7 @@ export default function Register() {
 
             <p> Ou </p>
 
-              <input placeholder="Primeiro nome"
+              <input placeholder="Nome"
               value={firstname} 
               onChange={e => setFirstName(e.target.value)}
               required

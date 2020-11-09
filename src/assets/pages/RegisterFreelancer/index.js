@@ -8,12 +8,13 @@ import './style.css';
 
 
 export default function Register() {
-  const [username, setUserName] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [nickName, setNickName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [checkPassword, setCheckPassword] = useState('');
   const [degree, setDegree] = useState('');
-  const [residence, setResidence] = useState('');
+  const [country, setCountry] = useState('');
   const [phone, setPhone] = useState('');
 
   const history = useHistory();
@@ -24,12 +25,13 @@ export default function Register() {
     try {
       
       const data = {
-        username,
+        firstName,
+        nickName,
         email,
         password,
         checkPassword,
         degree,
-        residence,
+        country,
         phone,
       }
       await api.post('freelancer', data);
@@ -69,9 +71,15 @@ export default function Register() {
             </div>
             
             <p> Ou </p>
-              <input placeholder="Nome completo"
-              value={username}
-              onChange={e => setUserName(e.target.value)}
+              <input placeholder="Nome"
+              value={firstName}
+              onChange={e => setFirstName(e.target.value)}
+              required
+              />
+
+              <input placeholder="Sobrenome"
+              value={nickName}
+              onChange={e => setNickName(e.target.value)}
               required
               />
 
@@ -94,15 +102,15 @@ export default function Register() {
               required
               />
 
-              <input placeholder="Nível académico" 
+              <input placeholder="Príncipal habilidade" 
               value={degree}
               onChange={e => setDegree(e.target.value)}
               required
               />
 
-              <input placeholder="Endereço" 
-              value={residence}
-              onChange={e => setResidence(e.target.value)}
+              <input placeholder="País" 
+              value={country}
+              onChange={e => setCountry(e.target.value)}
               required
               />
 
