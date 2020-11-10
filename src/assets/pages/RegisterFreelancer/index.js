@@ -121,6 +121,13 @@ export default function Register() {
               required
               />
 
+              <div className="accords">
+                <input type="checkbox" required></input>
+                <p className="term">Ao se cadastrar, eu aceito os <a href="#termos">Termos de serviço</a>, <a href="#acordo">Acordo de Usuário</a> e 
+                  as <a href="#Privacidade">Políticas de Privacidade</a> da CONTENTRIBE
+                </p>
+              </div>
+
               <button className="button" type="submit">Finalizar cadastro</button>
             </form>
           </div>
