@@ -6,7 +6,7 @@ import api from '../../../services/api';
 import './style.css';
 
 export default function Task() {
-    const [request, setRequest] = useState([]);
+    const [requests, setRequest] = useState([]);
 
     const companyId = localStorage.getItem('companyId');
 
@@ -22,17 +22,19 @@ export default function Task() {
       
     return(
        <div className="task-container">
-         <div className="task-card">
+       {requests.map(request => ( 
+         <div className="task-card" key={request.id}>
             <div className="task-card-header">
-              <h2>Tradução do certificado de Habilitações Literárias</h2>
-              <h3>categoria - Tradução  </h3>
-              <h3> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3>
+              <h2>{request.projectName}</h2>
+              <h3>categoria - {request.categgory}  </h3>
+              <h3>{request.description}</h3>
               <div className="task-detail">
-                <label><FaCalendar  color="#F29D35" /> Data de entrega: 10/12/2020</label>
-                <label><FaClock color="#F29D35" /> Prazo: 15 dias úteis</label>
+                <label><FaCalendar  color="#F29D35" /> Orçamento: {Intl('pt-BR', { style: 'currency', currency: 'AOA' }).format(request.budget)}</label>
+                <label><FaClock color="#F29D35" /> Prazo:{request.lifetime}</label>
               </div>
             </div>
         </div>  
+        ))}
         
         <Link to="/new/request" className="create-task">
             <FiPlus size={32} color="#FFF" />

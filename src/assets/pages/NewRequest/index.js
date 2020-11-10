@@ -37,6 +37,7 @@ export default function Profile() {
 
       alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
      history.push('/company/profile'); 
+      
     } catch (err) {
       alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente')
     }
@@ -50,7 +51,7 @@ export default function Profile() {
                 <h1>Requisitar produção de contéudo</h1>
                 <p className="description">Descreva a sua tarefa detalhadamente</p>
            
-                <Link className="back-link" to="/task">
+                <Link className="back-link" to="/company/profile ">
                   <FiArrowLeft  size={16} color="#6920B0" />
                 Voltar para home
                 </Link>

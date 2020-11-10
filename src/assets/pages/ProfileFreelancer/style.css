@@ -51,3 +51,7 @@
     position: relative; 
     align-items: center;
 }
+
+.profile-container .profile-container-body {
+    display: flex;
+}

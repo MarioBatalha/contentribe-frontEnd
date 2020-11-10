@@ -31,7 +31,7 @@ export default function Routes() {
                 <Route path="/HowItWorks" component={HowItWorks} />
                 <Route path="/sign" component={Sign} />
                 <Route path="/email/confirmation" component={EmailConfirmation} />
-                <Route path="/freelancer" component={ProfileFreelancer} />
+                <Route path="/freelancer/profile" component={ProfileFreelancer} />
                 <Route path="/company/profile" component={ProfileCompany} />
                 <Route path="/admin" component={ProfileAdmin} />
                 <Route path="/new/request" component={NewTask} />

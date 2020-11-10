@@ -23,6 +23,7 @@ export default function Logon() {
       localStorage.setItem('companyUserName', response.data.username);
 
       history.push('/company/profile');
+
     } catch (err) {
       alert('Falha no login, tente novamente.')
     }

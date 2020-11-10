@@ -1,34 +1,13 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import { FiBell, FiUser, FiUsers, FiBook, FiBookmark, FiLayers } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import { FiUsers, FiBook, FiBookmark, FiLayers } from 'react-icons/fi';
+
+import './style.css';
 
 export default function MenuFreelancer() {
-  const history = useHistory();
-
-  const ongName = localStorage.getItem('ongName');
-
-  function handleLogout() {
-   localStorage.clear();
-
-   history.push('/')
-  }
 
     return(
        <div>
-          <header>
-          <h1>Contentribe</h1>>
-          <span>Bem-vindo, {ongName}</span>
-          
-          <div className="menu">
-            <Link to="#" onClick={handleLogout} className="menu-item">
-              <FiBell size={30} color="#F29D35" />
-            </Link>
-            <Link to="#" onClick={handleLogout} className="menu-item">
-              <FiUser  size={30} color="#F29D35"/>
-            </Link>
-          </div>
-        </header>
-
         <div className="profile-container-body">
           <div className="profile-option">
             <ul>
