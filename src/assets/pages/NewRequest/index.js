@@ -15,7 +15,7 @@ export default function Profile() {
 
   const history = useHistory();
 
-  const companyId = localStorage.getItem('companyId');
+  const companyId = localStorage.getItem('company_id');
 
   async function handleNewRequest(e) {
     e.preventDefault();
