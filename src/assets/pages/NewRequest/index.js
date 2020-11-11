@@ -29,7 +29,7 @@ export default function Profile() {
         budget,
         promotionalCode,
       }
-      await api.post('request', data, {
+      await api.post('/request', data, {
         headers: {
           Authorization: companyId,
         }

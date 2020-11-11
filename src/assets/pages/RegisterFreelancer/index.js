@@ -34,7 +34,7 @@ export default function Register() {
         country,
         phone,
       }
-      await api.post('freelancer', data);
+      await api.post('/freelancer', data);
 
       alert(`Agora é um profissional contentribe, aguarde a confirmação por email para aceder ao seu perfil.`);
 
