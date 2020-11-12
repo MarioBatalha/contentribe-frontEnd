@@ -13,7 +13,7 @@ export default function Task() {
     useEffect(() => {
         api.get('profile', { 
           headers: {
-            authorization: companyId,
+            Authorization: companyId,
           }
         }).then(res => {
           setRequest(res.data);
