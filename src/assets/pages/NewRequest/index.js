@@ -30,11 +30,7 @@ export default function Profile() {
       }
 
     try {
-      await api.post('/request', data, {
-        headers: {
-          authorization: companyId,
-        }
-      })
+      await api.post('request', data)
 
       alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
      history.push('/company/profile'); 
