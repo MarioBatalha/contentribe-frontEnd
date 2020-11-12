@@ -8,7 +8,7 @@ import './style.css';
 export default function Task() {
     const [requests, setRequest] = useState([]);
 
-    const companyId = localStorage.getItem('company_id');
+    const companyId = localStorage.getItem('companyId');
 
     useEffect(() => {
         api.get('profile', { 

@@ -15,13 +15,12 @@ export default function Profile() {
 
   const history = useHistory();
 
-  const companyId = localStorage.getItem('company_id');
+  const companyId = localStorage.getItem('companyId');
 
   async function handleNewRequest(e) {
     e.preventDefault();
 
-    try {
-      const data = {
+    const data = {
         projectName,
         category,
         lifetime,
@@ -29,6 +28,8 @@ export default function Profile() {
         budget,
         promotionalCode,
       }
+
+    try {
       await api.post('request', data, {
         headers: {
           Authorization: companyId,
