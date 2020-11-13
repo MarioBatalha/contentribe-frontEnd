@@ -17,7 +17,7 @@ export default function Logon() {
     e.preventDefault();
 
     try {
-      const response = await api.post('sessions', { username, password });
+      const response = await api.post('/sessions', { username, password });
 
       localStorage.setItem('companyPassword', password);
       localStorage.setItem('companyUserName', response.data.username);

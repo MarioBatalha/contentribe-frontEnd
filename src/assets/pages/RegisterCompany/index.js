@@ -33,7 +33,7 @@ export default function Register() {
        checkPassword,
        country, 
      }
-      await api.post('company', data);
+      await api.post('/company', data);
 
       alert(`Registro feito com sucesso, pode aceder ao seu perfil fazendo o login.`);
 
