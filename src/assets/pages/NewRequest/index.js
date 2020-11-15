@@ -6,7 +6,7 @@ import api from '../../../services/api';
 import './style.css';
 
 export default function Profile() {
-  const [projectName, setProjectName] = useState('');
+  const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const [lifetime, setLifetime] = useState('');
   const [description, setDescription] = useState('');
@@ -20,7 +20,7 @@ export default function Profile() {
   async function handleNewRequest(e) {
     e.preventDefault();
     const data = {
-      projectName,
+      title,
       category,
       lifetime,
       description,
@@ -60,7 +60,7 @@ export default function Profile() {
 
             <form onSubmit={handleNewRequest}>
               <input placeholder="Nome do projecto"
-              value={projectName}
+              value={title}
               onChange={e => setProjectName(e.target.value)}
               />
 

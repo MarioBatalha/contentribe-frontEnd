@@ -25,7 +25,7 @@ export default function Task() {
        {requests.map(request => ( 
          <div className="task-card" key={request.id}>
             <div className="task-card-header">
-              <h2>{request.projectName}</h2>
+              <h2>{request.title}</h2>
               <h3>categoria - {request.categgory}  </h3>
               <h3>{request.description}</h3>
               <div className="task-detail">
