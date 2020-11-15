@@ -6,7 +6,7 @@ import api from '../../../services/api';
 import './style.css';
 
 export default function Task() {
-    const [requests, setRequest] = useState([]);
+    const [requests, setRequests] = useState([]);
 
     const companyId = localStorage.getItem('companyId');
 
@@ -16,7 +16,7 @@ export default function Task() {
             Authorization: companyId,
           }
         }).then(res => {
-          setRequest(res.data);
+          setRequests(res.data);
         })
       }, [companyId])
       
