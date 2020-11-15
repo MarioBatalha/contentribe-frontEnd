@@ -11,7 +11,11 @@ export default function Task() {
     const companyId = localStorage.getItem('companyId');
 
     useEffect(() => {
-        api.get('/profile').then(res => {
+        api.get('/profile', { 
+          headers: {
+            Authorization: companyId,
+          }
+        }).then(res => {
           setRequest(res.data);
         })
       }, [companyId])
