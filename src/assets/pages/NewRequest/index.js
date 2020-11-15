@@ -20,7 +20,8 @@ export default function Profile() {
   async function handleNewRequest(e) {
     e.preventDefault();
 
-    const data = {
+    try {
+      const data = {
         projectName,
         category,
         lifetime,
@@ -28,9 +29,7 @@ export default function Profile() {
         budget,
         promotionalCode,
       }
-
-    try {
-      await api.post('/request', data, {
+      await api.post('request', data, {
         headers: {
           Authorization: companyId,
         }
