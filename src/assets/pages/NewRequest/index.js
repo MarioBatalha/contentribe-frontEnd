@@ -19,16 +19,17 @@ export default function Profile() {
 
   async function handleNewRequest(e) {
     e.preventDefault();
+    const data = {
+      projectName,
+      category,
+      lifetime,
+      description,
+      budget,
+      promotionalCode,
+    }
 
     try {
-      const data = {
-        projectName,
-        category,
-        lifetime,
-        description,
-        budget,
-        promotionalCode,
-      }
+    
       await api.post('request', data, {
         headers: {
           Authorization: companyId,
