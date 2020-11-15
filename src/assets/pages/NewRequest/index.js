@@ -61,7 +61,7 @@ export default function Profile() {
             <form onSubmit={handleNewRequest}>
               <input placeholder="Nome do projecto"
               value={title}
-              onChange={e => setProjectName(e.target.value)}
+              onChange={e => setTitle(e.target.value)}
               />
 
               <input placeholder="Categória"

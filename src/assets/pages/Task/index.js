@@ -6,7 +6,7 @@ import api from '../../../services/api';
 import './style.css';
 
 export default function Task() {
-    const [requests, setRequests] = useState([]);
+    const [request, setRequest] = useState([]);
 
     const companyId = localStorage.getItem('companyId');
 
@@ -16,13 +16,13 @@ export default function Task() {
             Authorization: companyId,
           }
         }).then(res => {
-          setRequests(res.data);
+          setRequest(res.data);
         })
       }, [companyId])
       
     return(
        <div className="task-container">
-       {requests.map(request => ( 
+       {request.map(request => ( 
          <div className="task-card" key={request.id}>
             <div className="task-card-header">
               <h2>{request.title}</h2>
