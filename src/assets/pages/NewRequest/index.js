@@ -20,16 +20,15 @@ export default function Profile() {
   async function handleNewRequest(e) {
     e.preventDefault();
 
-    const data = {
-      title,
-      category,
-      lifetime,
-      description,
-      budget,
-      promotionalCode,
-    }
-
     try {
+      const data = {
+        title,
+        category,
+        lifetime,
+        description,
+        budget,
+        promotionalCode
+      }
     
       await api.post('request', data);
 
