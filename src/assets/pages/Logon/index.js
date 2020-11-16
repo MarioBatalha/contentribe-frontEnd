@@ -9,6 +9,7 @@ import Authentication from '../../image/authentication.png';
 
 
 export default function Logon() {
+  const [id] = useState('');
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
@@ -17,8 +18,9 @@ export default function Logon() {
     e.preventDefault();
 
     try {
-      const response = await api.post('/sessions', { username, password });
+      const response = await api.post('/sessions', { username, password, id });
 
+      localStorage.setItem('companyId', id);
       localStorage.setItem('companyPassword', password);
       localStorage.setItem('companyUserName', response.data.username);
 
