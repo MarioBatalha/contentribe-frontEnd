@@ -18,7 +18,7 @@ export default function Task() {
         }).then(res => {
           setRequest(res.data);
         })
-      }, [companyId])
+      }, [companyUserName])
       
     return(
        <div className="task-container">
