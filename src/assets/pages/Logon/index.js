@@ -11,7 +11,7 @@ import Authentication from '../../image/authentication.png';
 export default function Logon() {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
-  
+
   const history = useHistory();
 
   async function handleLogin(e) {
