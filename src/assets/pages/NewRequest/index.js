@@ -30,7 +30,11 @@ export default function Profile() {
         promotionalCode
       }
     
-      await api.post('request', data);
+      await api.post('request', data, {
+        headers: {
+          Authorization: companyId,
+        }
+      });
 
       alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
      history.push('/company/profile'); 

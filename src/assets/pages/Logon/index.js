@@ -21,8 +21,8 @@ export default function Logon() {
       const response = await api.post('/sessions', { username, password });
 
       localStorage.setItem('companyPassword', password);
+      localStorage.setItem('companyPassword', response.data.id);
       localStorage.setItem('companyUserName', response.data.username);
-      localStorage.setItem('companyId', response.data.id);
 
       history.push('/company/profile');
 
