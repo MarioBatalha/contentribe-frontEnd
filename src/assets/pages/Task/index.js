@@ -8,12 +8,12 @@ import './style.css';
 export default function Task() {
     const [request, setRequest] = useState([]);
 
-    const companyId = localStorage.getItem('companyId');
+    const companyUserName = localStorage.getItem('companyUserName');
 
     useEffect(() => {
         api.get('profile', { 
           headers: {
-            Authorization: companyId,
+            Authorization: companyUserName,
           }
         }).then(res => {
           setRequest(res.data);
