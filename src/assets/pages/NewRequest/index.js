@@ -19,6 +19,7 @@ export default function Profile() {
 
   async function handleNewRequest(e) {
     e.preventDefault();
+
     const data = {
       title,
       category,
@@ -79,8 +80,6 @@ export default function Profile() {
               value={description}
               onChange={e => setDescription(e.target.value)}
               />
-
-              <input type="file"/>
 
               <input placeholder="Orçamento"
               type="number"
