@@ -11,7 +11,6 @@ import Authentication from '../../image/authentication.png';
 export default function Logon() {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
-  const [id, setId] = useState('');
 
   const history = useHistory();
 
@@ -22,7 +21,6 @@ export default function Logon() {
       const response = await api.post('/sessions', { username, password });
 
       localStorage.setItem('companyPassword', password);
-      localStorage.setItem('companyPassword', response.data.id);
       localStorage.setItem('companyUserName', response.data.username);
 
       history.push('/company/profile');
@@ -59,12 +57,6 @@ export default function Logon() {
            onChange={e => setPassword(e.target.value)}
            required
            />
-
-          <input placeholder="Seu ID"
-           value={id}
-           onChange={e => setId(e.target.value)}
-           required 
-           /> 
            
            <button className="button">Entrar</button>
            <Link className="back-link" to="/notFound">
