@@ -50,7 +50,7 @@ export default function Logon() {
 
           <p> Ou </p>
 
-           <input placeholder="Nome do usuário"
+           <input placeholder="Nome da empresa/freelancer"
            value={username}
            onChange={e => setUserName(e.target.value)}
            required 
