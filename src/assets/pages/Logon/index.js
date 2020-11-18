@@ -24,7 +24,6 @@ export default function Logon() {
 
       localStorage.setItem('companyPassword', password);
       localStorage.setItem('companyUserName', response.data.username);
-      localStorage.setItem('companyId', response.data.company.id);
 
       history.push('/company/profile');
 
@@ -51,7 +50,7 @@ export default function Logon() {
 
           <p> Ou </p>
 
-           <input placeholder="Nome da empresa/freelancer"
+           <input placeholder="Nome da empresa ou freelancer"
            value={username}
            onChange={e => setUserName(e.target.value)}
            required 
