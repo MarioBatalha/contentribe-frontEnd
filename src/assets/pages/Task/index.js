@@ -26,11 +26,11 @@ export default function Task() {
          <div className="task-card" key={request.id}>
             <div className="task-card-header">
               <h2>{request.title}</h2>
-              <h3>categoria - {request.categgory}  </h3>
+              <h3>categoria - {request.category}  </h3>
               <h3>{request.description}</h3>
               <div className="task-detail">
                 <label><FaCalendar  color="#F29D35" /> Orçamento: {request.budget} AOA</label>
-                <label><FaClock color="#F29D35" /> Prazo:{request.lifetime}</label>
+                <label><FaClock color="#F29D35" /> Prazo: {request.lifetime}</label>
               </div>
             </div>
         </div>  
