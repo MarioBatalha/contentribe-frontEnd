@@ -29,7 +29,7 @@ export default function Task() {
               <h3>categoria - {request.categgory}  </h3>
               <h3>{request.description}</h3>
               <div className="task-detail">
-                <label><FaCalendar  color="#F29D35" /> Orçamento: {Intl('pt-BR', { style: 'currency', currency: 'AOA' }).format(request.budget)}</label>
+                <label><FaCalendar  color="#F29D35" /> Orçamento: {request.budget}</label>
                 <label><FaClock color="#F29D35" /> Prazo:{request.lifetime}</label>
               </div>
             </div>
