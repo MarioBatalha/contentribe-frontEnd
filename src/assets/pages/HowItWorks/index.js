@@ -7,11 +7,15 @@ import pay from '../../image/pay.png';
 import service from '../../image/service.png';
 import Footer from '../../components/Footer';
 
+import LogoImg from '../../image/logo.png'; 
+
 export default function HowItWorks() {
     return (
         <div className="page-howItWorks">
           <div className="page-howItWorks-section">
-          <h1>Contentribe</h1>
+            <div className="logo-container">
+              <img src={LogoImg} alt="Contentribe"></img>
+            </div>
 
             <div className="work">
                <div className="first">

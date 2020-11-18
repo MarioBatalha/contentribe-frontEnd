@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'; 
 import { FcGoogle } from 'react-icons/fc';
 
+import LogoImg from '../../image/logo.png';
 import api from '../../../services/api';
 import './style.css';
 
@@ -46,7 +47,9 @@ export default function Register() {
         <div className="register-container">
           <div className="content">
             <section>
-                <h1 className="logoImg">Contentribe</h1>
+            <div className="logo-container">
+              <img src={LogoImg} alt="Contentribe"></img>
+            </div>
                 <h1>Crie a sua conta empresa</h1>
                 <p>E trabalhe com os melhores freelancers.</p>
                 <p>Para uma melhor experiência comece a produzir contéudos  na contentribe </p>
@@ -67,18 +70,19 @@ export default function Register() {
             </div>
 
             <p> Ou </p>
+              <div className="input-group">
+                <input placeholder="Nome"
+                value={firstname} 
+                onChange={e => setFirstName(e.target.value)}
+                required
+                />
 
-              <input placeholder="Nome"
-              value={firstname} 
-              onChange={e => setFirstName(e.target.value)}
-              required
-              />
-
-              <input placeholder="Sobrenome"
-              value={nickname} 
-              onChange={e => setNickName(e.target.value)}
-              required
-              />
+                <input placeholder="Sobrenome"
+                value={nickname} 
+                onChange={e => setNickName(e.target.value)}
+                required
+                />
+              </div>
 
               <input placeholder="Nome da empresa"
               value={username} 

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
 import { FcGoogle } from 'react-icons/fc';
+
+import LogoImg from '../../image/logo.png'; 
 import api from '../../../services/api';
 
 import './style.css';
@@ -32,7 +34,9 @@ export default function Logon() {
     return (
      <div className="logon-container">
        <section className="form">
-       <h1>Contentribe</h1>
+          <div className="logo-container">
+              <img src={LogoImg} alt="Contentribe"></img>
+          </div>
 
        <form onSubmit={handleLogin}>
            <h1>Vamos começar !</h1>

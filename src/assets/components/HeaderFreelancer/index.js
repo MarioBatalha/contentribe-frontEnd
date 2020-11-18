@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiBell, FiPower } from 'react-icons/fi';
 import { FaUserCircle } from 'react-icons/fa';
+
+import LogoImg from '../../image/logo.png';
 import './style.css';
 
 export default function HeaderFreelancer() {
@@ -17,7 +19,9 @@ export default function HeaderFreelancer() {
   return (
     <div className="menu-container">
       <header>
-        <h1>Contentribe</h1>
+         <div className="logo-container">
+              <img src={LogoImg} alt="Contentribe"></img>
+          </div>
         <span>Bem-vindo, {freelancerUserName}</span>
         
         <div className="menu">

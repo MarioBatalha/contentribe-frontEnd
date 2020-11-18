@@ -5,6 +5,7 @@ import { FiBell,
          FiPower
 } from 'react-icons/fi';
 
+import LogoImg from '../../image/logo.png';
 import './style.css';
 
 export default function HeaderCompany() {
@@ -22,7 +23,9 @@ export default function HeaderCompany() {
     return(
        <div className="menu-container">
           <header>
-            <h1>Contentribe</h1>
+          <div className="logo-container">
+              <img src={LogoImg} alt="Contentribe"></img>
+          </div>
             <span>Bem-vindo, {companyUserName}</span>
             
             <div className="menu">

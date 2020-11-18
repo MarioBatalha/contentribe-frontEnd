@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'; 
 import { FcGoogle } from 'react-icons/fc';
 
+import LogoImg from '../../image/logo.png';
 import api from '../../../services/api';
 import './style.css';
 
@@ -48,7 +49,9 @@ export default function Register() {
         <div className="register-container">
           <div className="content">
             <section>
-                <h1>Contentribe</h1>
+            <div className="logo-container">
+              <img src={LogoImg} alt="Contentribe"></img>
+            </div>
                 <h1>Configure a sua conta <br />
                 freelancer.</h1>
                 <p>Seja um freelancer contentribe e receba as melhores propostas.</p>
@@ -71,17 +74,19 @@ export default function Register() {
             </div>
             
             <p> Ou </p>
-              <input placeholder="Nome"
-              value={firstName}
-              onChange={e => setFirstName(e.target.value)}
-              required
-              />
+              <div className="input-group">
+                <input placeholder="Nome"
+                value={firstName}
+                onChange={e => setFirstName(e.target.value)}
+                required
+                />
 
-              <input placeholder="Sobrenome"
-              value={nickName}
-              onChange={e => setNickName(e.target.value)}
-              required
-              />
+                <input placeholder="Sobrenome"
+                value={nickName}
+                onChange={e => setNickName(e.target.value)}
+                required
+                />
+              </div>
 
 
               <input placeholder="Email" type="email"

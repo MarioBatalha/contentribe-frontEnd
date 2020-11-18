@@ -5,6 +5,7 @@ import './style.css';
 import '../../../global.css';
 
 import ladingImg from '../../image/fly.png';
+import LogoImg from '../../image/logo.png'; 
 import Footer from '../../components/Footer';
 
 function Lading() {
@@ -13,7 +14,7 @@ function Lading() {
     <div id="page-lading">
       <div className="container">
         <div className="logo-container">
-          <h1>Contentribe</h1>
+          <img src={LogoImg} alt="Contentribe"></img>
         </div>  
 
         <strong>Potencialize a sua equipa com os <br /> 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
+import LogoImg from '../../image/logo.png';
 import api from '../../../services/api';
 import './style.css';
 
@@ -19,17 +20,16 @@ export default function Profile() {
 
   async function handleNewRequest(e) {
     e.preventDefault();
+    const data = {
+      title,
+      category,
+      lifetime,
+      description,
+      budget,
+      promotionalCode
+    }
 
     try {
-      const data = {
-        title,
-        category,
-        lifetime,
-        description,
-        budget,
-        promotionalCode
-      }
-    
       await api.post('request', data, {
         headers: {
           Authorization: companyUserName,
@@ -48,7 +48,9 @@ export default function Profile() {
         <div className="new-incident-container">
           <div className="content">
             <section>
-                <h1>Contentribe</h1>
+            <div className="logo-container">
+              <img src={LogoImg} alt="Contentribe"></img>
+            </div>
                 <h1>Requisitar produção de contéudo</h1>
                 <p className="description">Descreva a sua tarefa detalhadamente</p>
            
