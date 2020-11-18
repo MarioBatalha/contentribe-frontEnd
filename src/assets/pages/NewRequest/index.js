@@ -30,7 +30,7 @@ export default function Profile() {
     }
 
     try {
-      await api.post('/request', data, {
+      await api.post('request', data, {
         headers: {
           Authorization: companyUserName,
         }
