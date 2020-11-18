@@ -28,7 +28,7 @@ export default function Profile() {
         lifetime,
         description,
         budget,
-        promotionalCode
+        promotionalCode,
       }
       await api.post('request', data, {
         headers: {
