@@ -24,6 +24,7 @@ export default function Logon() {
 
       localStorage.setItem('companyPassword', password);
       localStorage.setItem('companyUserName', response.data.username);
+      localStorage.setItem('companyId', response.data.company.id);
 
       history.push('/company/profile');
 

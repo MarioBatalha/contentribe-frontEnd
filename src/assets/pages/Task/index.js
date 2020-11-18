@@ -8,17 +8,17 @@ import './style.css';
 export default function Task() {
     const [request, setRequest] = useState([]);
 
-    const companyUserName = localStorage.getItem('companyUserName');
+    const companyId = localStorage.getItem('companyId');
 
     useEffect(() => {
         api.get('profile', { 
           headers: {
-            Authorization: companyUserName,
+            Authorization: companyId,
           }
         }).then(res => {
           setRequest(res.data);
         })
-      }, [companyUserName])
+      }, [companyId])
       
     return(
        <div className="task-container">

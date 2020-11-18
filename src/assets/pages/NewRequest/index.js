@@ -16,7 +16,7 @@ export default function Profile() {
 
   const history = useHistory();
 
-  const companyUserName = localStorage.getItem('companyUserName');
+  const companyId = localStorage.getItem('companyId');
 
   async function handleNewRequest(e) {
     e.preventDefault();
@@ -32,7 +32,7 @@ export default function Profile() {
     try {
       await api.post('request', data, {
         headers: {
-          Authorization: companyUserName,
+          Authorization: companyId,
         }
       });
 
