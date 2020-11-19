@@ -63,7 +63,7 @@ header .menu .menu-item{
     width: 15rem;
 }
 
-.profile-option  ul li a:active {
+.profile-option  ul li a:focus {
     background: #73738038;
     color: #F29D35;
     border-right: 5px solid #F29D35;

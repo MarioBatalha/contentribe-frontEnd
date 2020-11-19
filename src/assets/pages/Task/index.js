@@ -27,15 +27,16 @@ export default function Task() {
 						<input
 							type="text"
 							className="filters__search__input"
-							placeholder="Pesquisar por nome"
+							placeholder="Pesquisar por tarefas"
 							value={textSearch}
 							onChange={e => setTextSearch(e.target.setTextSearch)}
 						/>
 						{/**Esse onClick causa waning no console mas pode ser retirado {/*onClicK={() => this.props.filterBy(this.state.textSearch)}*/}{' '}
 						<button className="filters__search__icon">
-							<FiSearch color="#F29D35" size={15} />
+							<FiSearch  size={30} />
 						</button>
 					</div>
+          <h1>Suas tarefas</h1>
        {request.map(request => ( 
          <div className="task-card" key={request.id}>
             <div className="task-card-header">

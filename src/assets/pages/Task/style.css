@@ -5,6 +5,12 @@
     margin: 28px auto;
 }
 
+.task-container h1 {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+
 .filters__search {
     background: #fff;
     border-radius: 5px;
@@ -16,7 +22,7 @@
     justify-content: stretch;
     margin-right: 8px;
     overflow: hidden;
-    width: 80%;
+    width: 82%;
   }
   
   .filters__search__input {
@@ -29,15 +35,19 @@
     padding: 5px 10px;
     width: 100%;
   }
-  
-  .filters__search__icon {
-    background: transparent;
-    font-size: 1.4rem;
-    color: #9FA9BC;
+  .filters__search__input:focus{
+    border: 1px solid #F29D35;
   }
   
-  .filters__search__icon:hover {
-    color: #F29D35;
+  .filters__search__icon {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: #F29D35;
+    font-size: 1.4rem;
+    color: #FFF;
+    padding: 10px;
   }
 
 .task-card {
@@ -75,7 +85,7 @@
 }
 
 .create-task {
-    position: relative;
+    position: fixed;
     right: 40px;
     bottom: 40px;
 
@@ -87,8 +97,8 @@
     border-radius: 100%;
 
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
 
     transition: background-color 0.2s;
 }
