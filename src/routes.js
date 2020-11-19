@@ -12,7 +12,7 @@ import NewTask from '../src/assets/pages/NewRequest';
 import Lading from '../src/assets/pages/Lading';
 import NotFound from '../src/assets/components/NotFound';
 import Sign from '../src/assets/pages/SignUp';
-import InfoProfileCompany from '../src/pages/InfoProfileCompany';
+import InfoProfileCompany from '../src/assets/pages/InfoProfileCompany';
 import HowItWorks from '../src/assets/pages/HowItWorks';
 import Hired from '../src/assets/pages/Hired';
 import Report from '../src/assets/pages/Report';
