@@ -19,7 +19,7 @@ export default function MenuCompany() {
               <li>
                 <Link to="/company/hired">
                   <FiClipboard size={20} color="#F29D35" />
-                  Contratados
+                  Ficheiros
                 </Link>
               </li>
               
