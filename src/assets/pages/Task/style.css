@@ -5,9 +5,9 @@
     margin: 28px auto;
 }
 
-.task-container h1 {
-    position: relative;
+.task-container .text-title {
     margin-top: 80px;
+    text-align: left;
     margin-bottom: 24px;
 }
 
@@ -106,3 +106,7 @@
 .create-task:hover {
     background: rgb(236, 144, 32);
 }
+ hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+ }

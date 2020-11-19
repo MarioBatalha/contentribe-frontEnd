@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FaCoins, FaClock } from 'react-icons/fa';
 import { FiPlus, FiSearch } from 'react-icons/fi';
 import api from '../../../services/api';
+import ProgressBar from '../../components/ProgressBar';
+
 import './style.css';
 
 export default function Task() {
@@ -36,7 +38,7 @@ export default function Task() {
 							<FiSearch  size={30} />
 						</button>
 					</div>
-          <h1>Suas tarefas</h1>
+          <h1 className="text-title">Suas tarefas</h1>
        {request.map(request => ( 
          <div className="task-card" key={request.id}>
             <div className="task-card-header">
@@ -51,7 +53,7 @@ export default function Task() {
 
             <hr />
             <div className="progress-container">
-
+              <ProgressBar />
             </div>
         </div>  
         ))}
