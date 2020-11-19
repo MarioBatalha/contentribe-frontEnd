@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { FaCoins, FaClock } from 'react-icons/fa';
 import { FiPlus, FiSearch } from 'react-icons/fi';
 import api from '../../../services/api';
-import ProgressBar from '../../components/ProgressBar';
 
 import './style.css';
 
@@ -53,7 +52,7 @@ export default function Task() {
 
             <hr />
             <div className="progress-container">
-              <ProgressBar />
+            <span>Progresso das tarefas</span>
             </div>
         </div>  
         ))}
