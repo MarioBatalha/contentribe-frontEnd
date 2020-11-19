@@ -14,7 +14,7 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [checkPassword, setCheckPassword] = useState('');
-  const [degree, setDegree] = useState('');
+  const [degree, setDegree] = useState('Design e Ilustração');
   const [country, setCountry] = useState('');
   const [phone, setPhone] = useState('');
 
@@ -113,8 +113,8 @@ export default function Register() {
                 <option value="software">Redação e Copywriting</option>
                 <option value="software">Consultoria e Marketing</option>
                 <option value="software">Transcrição e Tradução</option>
-                <option value="software">video e Animação</option>
-                <option value="other">other</option>
+                <option value="software">Video e Animação</option>
+                <option value="other">Other</option>
               </select>
 
               <input placeholder="País" 

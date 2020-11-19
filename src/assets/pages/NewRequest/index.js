@@ -8,7 +8,7 @@ import './style.css';
 
 export default function Profile() {
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('Design e Ilustração');
   const [lifetime, setLifetime] = useState('');
   const [description, setDescription] = useState('');
   const [budget, setBudget] = useState('');
@@ -73,8 +73,8 @@ export default function Profile() {
                 <option value="software">Redação e Copywriting</option>
                 <option value="software">Consultoria e Marketing</option>
                 <option value="software">Transcrição e Tradução</option>
-                <option value="software">video e Animação</option>
-                <option value="other">other</option>
+                <option value="software">Video e Animação</option>
+                <option value="other">Other</option>
               </select>
 
               <input placeholder="Prazo" 
