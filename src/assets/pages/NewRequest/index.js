@@ -67,10 +67,15 @@ export default function Profile() {
               onChange={e => setTitle(e.target.value)}
               />
 
-              <input placeholder="Categória"
-              value={category}
-              onChange={e => setCategory(e.target.value)}
-              />
+              <select name="category" value={category}  onChange={e => setCategory(e.target.value)} required>
+                <option value="design">Design e Ilustração</option>
+                <option value="software">Desenvolvimento de Software</option>
+                <option value="software">Redação e Copywriting</option>
+                <option value="software">Consultoria e Marketing</option>
+                <option value="software">Transcrição e Tradução</option>
+                <option value="software">video e Animação</option>
+                <option value="other">other</option>
+              </select>
 
               <input placeholder="Prazo" 
               value={lifetime}

@@ -38,7 +38,7 @@ export default function Task() {
         <span className="error-text">Error: {error.message} - Verifique a sua conexão de internet.</span>
         </div>
       }else if(isLoaded) {
-        return <div className="">Loading...</div>
+        return <div className="loader"></div>
       }else{
         return(
           <div className="task-container">

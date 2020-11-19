@@ -30,20 +30,21 @@ form {
     width: 90%;
 }
 
-form input {
+form input, select {
     width:100%;
     height: 60px;
     color: #41414d;;
     border: 1px solid #1111132a;
     border-radius: 8px;
     padding: 0 24px;
+    background-color: #FFF;
 }
 
 form input:focus {
     border: 1px solid #F29D35;
 }
 
-form textarea, select {
+form textarea {
     width: 100%;
     resize: vertical;
     min-height: 140px;
