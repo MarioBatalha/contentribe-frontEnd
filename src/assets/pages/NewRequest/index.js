@@ -22,6 +22,7 @@ export default function Profile() {
     e.preventDefault();
 
     try {
+
       const data = {
         title,
         category,
@@ -35,13 +36,12 @@ export default function Profile() {
         headers: {
           Authorization: companyUserName,
         }
-      })
-
-     //alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
-     history.push('/company/profile'); 
+      }) 
+      alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
+      history.push('/company/profile');
       
     } catch (error) {
-      alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente')
+      //alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente')
     }
   }
   
