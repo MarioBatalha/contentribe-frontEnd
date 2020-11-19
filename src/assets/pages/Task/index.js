@@ -7,6 +7,7 @@ import './style.css';
 
 export default function Task() {
     const [request, setRequest] = useState([]);
+    const [textSearch, setTextSearch] = useState('');
 
     const companyUserName = localStorage.getItem('companyUserName');
 
@@ -22,6 +23,19 @@ export default function Task() {
       
     return(
        <div className="task-container">
+        <div className="filters__search">
+						<input
+							type="text"
+							className="filters__search__input"
+							placeholder="Pesquisar por nome"
+							value={textSearch}
+							onChange={e => setTextSearch(e.target.setTextSearch)}
+						/>
+						{/**Esse onClick causa waning no console mas pode ser retirado {/*onClicK={() => this.props.filterBy(this.state.textSearch)}*/}{' '}
+						<button className="filters__search__icon">
+							<i className="fa fa-search" />
+						</button>
+					</div>
        {request.map(request => ( 
          <div className="task-card" key={request.id}>
             <div className="task-card-header">
