@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCoins, FaClock } from 'react-icons/fa';
-import { FiPlus } from 'react-icons/fi';
+import { FiPlus, FiSearch } from 'react-icons/fi';
 import api from '../../../services/api';
 import './style.css';
 
@@ -33,7 +33,7 @@ export default function Task() {
 						/>
 						{/**Esse onClick causa waning no console mas pode ser retirado {/*onClicK={() => this.props.filterBy(this.state.textSearch)}*/}{' '}
 						<button className="filters__search__icon">
-							<i className="fa fa-search" />
+							<FiSearch color="#F29D35" size={15} />
 						</button>
 					</div>
        {request.map(request => ( 

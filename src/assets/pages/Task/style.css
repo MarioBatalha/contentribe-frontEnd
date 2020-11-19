@@ -12,11 +12,11 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, .07);
     display: flex;
     flex-wrap: nowrap;
-    height: 40px;
+    height: 50px;
     justify-content: stretch;
     margin-right: 8px;
     overflow: hidden;
-    width: 100%;
+    width: 80%;
   }
   
   .filters__search__input {
@@ -87,8 +87,8 @@
     border-radius: 100%;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
 
     transition: background-color 0.2s;
 }

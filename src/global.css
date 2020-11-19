@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +39,9 @@ form input {
     padding: 0 24px;
 }
 
+form input:enabled {
+    border: 1px solid #F29D35;
+}
 
 form textarea, select {
     width: 100%;
@@ -51,6 +53,10 @@ form textarea, select {
     border-radius: 8px;
     padding: 0 24px;
     line-height:24px;
+}
+
+form textarea:enabled {
+    border: 1px solid #F29D35;
 }
 
 .button {
