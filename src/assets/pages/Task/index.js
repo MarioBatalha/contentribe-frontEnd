@@ -48,6 +48,11 @@ export default function Task() {
                 <label><FaClock color="#F29D35" /> Prazo: {request.lifetime}</label>
               </div>
             </div>
+
+            <hr />
+            <div className="progress-container">
+
+            </div>
         </div>  
         ))}
         
