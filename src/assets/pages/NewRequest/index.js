@@ -37,7 +37,7 @@ export default function Profile() {
         }
       })
 
-     alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
+     //alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
      history.push('/company/profile'); 
       
     } catch (error) {

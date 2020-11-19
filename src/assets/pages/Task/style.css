@@ -50,6 +50,10 @@
     padding: 10px;
   }
 
+  .filters__search__icon:hover{
+    background: rgb(236, 144, 32);
+  }
+
 .task-card {
     position: relative;
     list-style: none;
