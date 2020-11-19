@@ -39,7 +39,7 @@ form input {
     padding: 0 24px;
 }
 
-form input:enabled {
+form input:focus {
     border: 1px solid #F29D35;
 }
 
@@ -55,7 +55,7 @@ form textarea, select {
     line-height:24px;
 }
 
-form textarea:enabled {
+form textarea:focus {
     border: 1px solid #F29D35;
 }
 
