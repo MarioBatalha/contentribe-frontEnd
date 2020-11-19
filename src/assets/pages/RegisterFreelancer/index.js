@@ -108,13 +108,13 @@ export default function Register() {
               />
 
               <select name="degree" value={degree}  onChange={e => setDegree(e.target.value)} required>
-                <option value="Design-Ilustração">Design e Ilustração</option>
-                <option value="Desenvolvimento-software">Desenvolvimento de Software</option>
-                <option value="Redação-Copywriting">Redação e Copywriting</option>
-                <option value="Consultoria-Marketing">Consultoria e Marketing</option>
-                <option value="Transcrição-Tradução">Transcrição e Tradução</option>
-                <option value="Video-Animação">Video e Animação</option>
-                <option value="Other">Other</option>
+                <option value="Design e Ilustração">Design e Ilustração</option>
+                <option value="Desenvolvimento desoftware">Desenvolvimento de Software</option>
+                <option value="Redação e Copywriting">Redação e Copywriting</option>
+                <option value="Consultoria e Marketing">Consultoria e Marketing</option>
+                <option value="Transcrição e Tradução">Transcrição e Tradução</option>
+                <option value="Video e Animação">Video e Animação</option>
+                <option value="Others">Other</option>
               </select>
 
               <input placeholder="País" 
