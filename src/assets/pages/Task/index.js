@@ -9,8 +9,8 @@ import './style.css';
 export default function Task() {
     const [request, setRequest] = useState([]);
     const [textSearch, setTextSearch] = useState('');
-    const [error , setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
+    //const [error , setError] = useState(null);
+    //const [isLoaded, setIsLoaded] = useState(false);
 
     const companyUserName = localStorage.getItem('companyUserName');
 
@@ -19,6 +19,8 @@ export default function Task() {
           headers: {
             Authorization: companyUserName,
           }
+        }).then(res => {
+          setRequest(res.data)
         })
       }, [companyUserName]);
 
@@ -61,6 +63,5 @@ export default function Task() {
                 <FiPlus size={32} color="#FFF" />
             </Link> 
           </div>
-        )
-      }  
+        ) 
   } 
