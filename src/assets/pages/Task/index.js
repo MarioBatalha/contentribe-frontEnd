@@ -19,25 +19,9 @@ export default function Task() {
           headers: {
             Authorization: companyUserName,
           }
-        }).then(res => {
-          setRequest(res.data)
-        }).then(
-          (result) => {
-            setIsLoaded(true);
-            setRequest(result);
-          },
-          (error) => {
-            setIsLoaded(true);
-            setError(error);
-          }
-        )
+        })
       }, [companyUserName]);
 
-      if (error) {
-        return <div className="error-message">
-          <span className="error-text">Error: {error.message} - Verifique a sua conexão de internet.</span>
-        </div>
-      }else {
         return(
           <div className="task-container">
             <div className="filters__search">
