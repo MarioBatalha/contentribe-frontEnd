@@ -37,8 +37,8 @@ export default function Profile() {
           }
         })
 
-        alert('Acabaste de fazer a requisição de uma tarefa')
-        history.push('company/profile');
+        //alert('Acabaste de fazer a requisição de uma tarefa')
+        history.push('/company/profile');
 
       } catch(errors){
         alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente');
