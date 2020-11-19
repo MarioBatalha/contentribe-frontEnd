@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaCalendar, FaClock } from 'react-icons/fa';
+import { FaCoins, FaClock } from 'react-icons/fa';
 import { FiPlus } from 'react-icons/fi';
 import api from '../../../services/api';
 import './style.css';
@@ -43,7 +43,7 @@ export default function Task() {
               <h3>categoria - {request.category}  </h3>
               <h3>{request.description}</h3>
               <div className="task-detail">
-                <label><FaCalendar  color="#F29D35" /> Orçamento: {request.budget} AOA</label>
+                <label><FaCoins  color="#F29D35" /> Orçamento: {request.budget}.000 AOA</label>
                 <label><FaClock color="#F29D35" /> Prazo: {request.lifetime}</label>
               </div>
             </div>
