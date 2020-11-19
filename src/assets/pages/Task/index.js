@@ -50,10 +50,10 @@ export default function Task() {
               </div>
             </div>
 
-            <hr />
+            {/** <hr />
             <div className="progress-container">
-              <span>Progresso das tarefas</span>
-            </div>
+              
+            </div>*/}
         </div>  
         ))}
         
