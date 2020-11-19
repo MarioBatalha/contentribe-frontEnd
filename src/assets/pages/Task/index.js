@@ -22,9 +22,9 @@ export default function Task() {
         }).then(res => {
           setRequest(res.data)
         }).then(
-          (results) => {
+          (result) => {
             setIsLoaded(true);
-            setRequest(results);
+            setRequest(result);
           },
           (error) => {
             setIsLoaded(true);
@@ -33,13 +33,11 @@ export default function Task() {
         )
       }, [companyUserName]);
 
-      if(error) {
+      if (error) {
         return <div className="error-message">
-        <span className="error-text">Error: {error.message} - Verifique a sua conexão de internet.</span>
+          <span className="error-text">Error: {error.message} - Verifique a sua conexão de internet.</span>
         </div>
-      }else if(!isLoaded) {
-        return <div className="loader"></div>
-      }else{
+      }else {
         return(
           <div className="task-container">
             <div className="filters__search">
