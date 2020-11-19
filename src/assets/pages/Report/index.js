@@ -12,6 +12,7 @@ export default function Report() {
             <div className="profile-container-body">
             <MenuCompany />
             </div>
+            <h1>Gerar relatórios de actividades</h1>
         </div> 
     );
 }

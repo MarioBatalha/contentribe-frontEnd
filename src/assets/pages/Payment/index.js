@@ -12,6 +12,7 @@ export default function Payment() {
             <div className="profile-container-body">
             <MenuCompany />
             </div>
+            <h1>Gerir pagamentos</h1>
         </div>    
     );
 }

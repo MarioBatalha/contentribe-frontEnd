@@ -35,13 +35,13 @@ export default function Profile() {
           headers: {
             Authorization: companyUserName,
           }
-        }) 
+        })
 
-        alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente');
+        alert('Acabaste de fazer a requisição de uma tarefa')
         history.push('/company/profile');
 
       } catch(errors){
-      alert('Acabaste de fazer a requisição de uma tarefa')
+        alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente');
     }
   }
   

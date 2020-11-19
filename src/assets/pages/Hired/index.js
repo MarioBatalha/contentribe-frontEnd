@@ -12,6 +12,7 @@ export default function Hired() {
             <div className="profile-container-body">
             <MenuCompany />
             </div>
+            <h1>Lista de freelancer contratados</h1>
         </div>    
     );
 }

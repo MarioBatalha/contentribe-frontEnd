@@ -11,6 +11,7 @@ export default function InfoProfileCompany() {
             <div className="profile-container-body">
             <MenuCompany />
             </div>
+            <h1>Informações pessoais</h1>
         </div>    
     );
 }
