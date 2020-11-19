@@ -38,7 +38,7 @@ export default function Profile() {
         })
 
         alert('Acabaste de fazer a requisição de uma tarefa')
-        history.push('/company/profile');
+        history.push('company/profile');
 
       } catch(errors){
         alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente');
@@ -68,13 +68,13 @@ export default function Profile() {
               />
 
               <select name="category" value={category}  onChange={e => setCategory(e.target.value)} required>
-                <option value="design">Design e Ilustração</option>
-                <option value="software">Desenvolvimento de Software</option>
-                <option value="software">Redação e Copywriting</option>
-                <option value="software">Consultoria e Marketing</option>
-                <option value="software">Transcrição e Tradução</option>
-                <option value="software">Video e Animação</option>
-                <option value="other">Other</option>
+                <option value="Design-Ilustração">Design e Ilustração</option>
+                <option value="Desenvolvimento-software">Desenvolvimento de Software</option>
+                <option value="Redação-Copywriting">Redação e Copywriting</option>
+                <option value="Consultoria-Marketing">Consultoria e Marketing</option>
+                <option value="Transcrição-Tradução">Transcrição e Tradução</option>
+                <option value="Video-Animação">Video e Animação</option>
+                <option value="Other">Other</option>
               </select>
 
               <input placeholder="Prazo" 
