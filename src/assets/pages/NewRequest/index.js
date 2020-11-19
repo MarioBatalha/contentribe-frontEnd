@@ -37,11 +37,11 @@ export default function Profile() {
           }
         }) 
 
-        history.push('/')
-        alert('Acabaste de fazer a requisição de uma tarefa. Aguarde confirmação por email')
-    
-      } catch(err){
-      alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente')
+        alert('Erro ao requisitar tarefa,  verifique os campos e tente novamente');
+        history.push('/company/profile');
+
+      } catch(errors){
+      alert('Acabaste de fazer a requisição de uma tarefa')
     }
   }
   
