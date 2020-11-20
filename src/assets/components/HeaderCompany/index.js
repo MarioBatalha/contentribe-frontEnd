@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import { FiBell, 
-         FiPower
+         FiLogOut
 } from 'react-icons/fi';
 
 import LogoImg from '../../image/logo.png';
@@ -32,7 +32,7 @@ export default function HeaderCompany() {
             
             <div className="menu">
               <Link to="#" onClick={handleLogout} className="menu-item">
-                <FiPower  size={30} color="#F29D35"/>
+                <FiLogOut  size={30} color="#F29D35"/>
               </Link>
               <Link to="#" className="menu-item">
                 <FiBell size={30} color="#F29D35" />
