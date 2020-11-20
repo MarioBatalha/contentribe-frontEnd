@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import LogoImg from '../../image/logo.png';
 import emailNotification from '../../image/emailNotification.png';
 import './style.css';
 
 export default function ProfileConfirmation() {
 
-  const companyName = localStorage.getItem('companyName');
  
     return (
         <div className="profile-container">

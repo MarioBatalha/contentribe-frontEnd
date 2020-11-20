@@ -39,7 +39,7 @@ export default function Register() {
 
       alert(`Agora é um profissional contentribe, aguarde a confirmação por email para aceder ao seu perfil.`);
 
-     history.push('/'); 
+     history.push('/logon'); 
     } catch (err) {
       alert('Erro ao cadastrar freelancer, tente novamente')
     }

@@ -38,7 +38,7 @@ export default function Register() {
 
       alert(`Registro feito com sucesso, pode aceder ao seu perfil fazendo o login.`);
 
-      history.push('/');
+      history.push('/logon');
     } catch (error) {
       alert('Erro no registro, tente novamente.');
     }
