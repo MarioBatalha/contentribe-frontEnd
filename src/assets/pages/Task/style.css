@@ -212,7 +212,6 @@
  align-items: center;
  justify-content: space-evenly;
  margin-bottom: 20px;
- margin-top: 20px;
 }
 
 .task-container .actions button {
@@ -224,6 +223,7 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .task-container .actions button:hover {
