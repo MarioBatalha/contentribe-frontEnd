@@ -14,7 +14,7 @@ function Lading() {
     <div id="page-lading">
       <div className="container">
         <div className="logo-container">
-          <Link to="/company/profile">
+          <Link to="/">
               <img src={LogoImg} alt="Contentribe"></img>
           </Link>
         </div>  

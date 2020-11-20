@@ -48,7 +48,7 @@ export default function Register() {
           <div className="content">
             <section>
             <div className="logo-container">
-            <Link to="/company/profile">
+            <Link to="/">
               <img src={LogoImg} alt="Contentribe"></img>
             </Link>>
             </div>

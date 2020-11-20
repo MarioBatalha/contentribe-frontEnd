@@ -35,7 +35,7 @@ export default function Logon() {
      <div className="logon-container">
        <section className="form">
           <div className="logo-container">
-          <Link to="/company/profile">
+          <Link to="/">
               <img src={LogoImg} alt="Contentribe"></img>
           </Link>
           </div>
