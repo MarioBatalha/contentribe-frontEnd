@@ -37,7 +37,7 @@ export default function Profile() {
           }
         })
 
-        alert('Acabaste de fazer a requisição de uma tarefa')
+        //alert('Acabaste de fazer a requisição de uma tarefa')
         history.push('/company/profile');
 
       } catch(errors){
