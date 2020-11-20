@@ -11,10 +11,6 @@ export default function ProfileConfirmation() {
  
     return (
         <div className="profile-container">
-          <header>
-            <img src={LogoImg} alt="Contentribe" />
-            <span>Bem-vindo, {companyName}</span>
-          </header>
 
           <div>
             <img src={emailNotification} alt="confirmação de email" className="emailNotification"/>
