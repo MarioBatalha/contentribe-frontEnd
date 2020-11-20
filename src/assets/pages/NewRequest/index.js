@@ -52,7 +52,9 @@ export default function Profile() {
           <div className="content">
             <section>
             <div className="logo-container">
+            <Link to="/company/profile">
               <img src={LogoImg} alt="Contentribe"></img>
+            </Link>
             </div>
                 <h1>Requisitar produção de contéudo</h1>
                 <p className="description">Descreva a sua tarefa detalhadamente</p>

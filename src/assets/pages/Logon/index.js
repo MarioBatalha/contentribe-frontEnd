@@ -35,7 +35,9 @@ export default function Logon() {
      <div className="logon-container">
        <section className="form">
           <div className="logo-container">
+          <Link to="/company/profile">
               <img src={LogoImg} alt="Contentribe"></img>
+          </Link>
           </div>
 
        <form onSubmit={handleLogin}>

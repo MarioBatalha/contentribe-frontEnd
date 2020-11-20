@@ -20,7 +20,9 @@ export default function HeaderFreelancer() {
     <div className="menu-container">
       <header>
          <div className="logo-container">
+          <Link to="/company/profile">
               <img src={LogoImg} alt="Contentribe"></img>
+          </Link>  
           </div>
         <span>Bem-vindo, {freelancerUserName}</span>
         

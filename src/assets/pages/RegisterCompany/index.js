@@ -48,7 +48,9 @@ export default function Register() {
           <div className="content">
             <section>
             <div className="logo-container">
+            <Link to="/company/profile">
               <img src={LogoImg} alt="Contentribe"></img>
+            </Link>>
             </div>
                 <h1>Crie a sua conta empresa</h1>
                 <p>E trabalhe com os melhores freelancers.</p>

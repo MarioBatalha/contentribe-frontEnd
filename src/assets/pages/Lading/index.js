@@ -14,7 +14,9 @@ function Lading() {
     <div id="page-lading">
       <div className="container">
         <div className="logo-container">
-          <img src={LogoImg} alt="Contentribe"></img>
+          <Link to="/company/profile">
+              <img src={LogoImg} alt="Contentribe"></img>
+          </Link>
         </div>  
 
         <strong>Potencialize a sua equipa com os <br /> 

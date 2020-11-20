@@ -14,7 +14,9 @@ export default function HowItWorks() {
         <div className="page-howItWorks">
           <div className="page-howItWorks-section">
             <div className="logo-container">
+            <Link to="/company/profile">
               <img src={LogoImg} alt="Contentribe"></img>
+            </Link>  
             </div>
 
             <div className="work">
