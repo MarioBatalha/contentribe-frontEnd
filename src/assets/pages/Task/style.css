@@ -206,3 +206,26 @@
   }
 }
 
+.task-container .actions{
+ display: flex;
+ justify-content: space-evenly;
+ margin-bottom: 20px;
+}
+
+.task-container .actions button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background: #F29D35;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-container .actions button:hover {
+  background: rgb(236, 144, 32);
+}
+
+
+

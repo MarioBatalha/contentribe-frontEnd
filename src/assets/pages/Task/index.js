@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCoins, FaClock } from 'react-icons/fa';
 import { FiPlus, FiSearch } from 'react-icons/fi';
+
 import api from '../../../services/api';
 
 import './style.css';
@@ -9,8 +10,6 @@ import './style.css';
 export default function Task() {
     const [request, setRequest] = useState([]);
     const [textSearch, setTextSearch] = useState('');
-    //const [error , setError] = useState(null);
-    //const [isLoaded, setIsLoaded] = useState(false);
 
     const companyUserName = localStorage.getItem('companyUserName');
 
@@ -23,6 +22,7 @@ export default function Task() {
           setRequest(res.data)
         })
       }, [companyUserName]);
+
 
         return(
           <div className="task-container">
@@ -62,6 +62,12 @@ export default function Task() {
             <Link to="/new/request" className="create-task">
                 <FiPlus size={32} color="#FFF" />
             </Link> 
+
+           <div className="actions">
+            <button onClick="">Anterior</button>
+            <button onClick="">Próxima</button>
+           </div>     
+
           </div>
         ) 
   } 

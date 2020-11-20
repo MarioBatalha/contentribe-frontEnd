@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import LogoImg from '../../image/logo.png';
@@ -14,7 +14,7 @@ export default function Profile() {
   const [budget, setBudget] = useState('');
   const [promotionalCode, setPromotionalCode] = useState('');
 
-  const history = useHistory();
+  //const history = useHistory();
 
   const companyUserName = localStorage.getItem('companyUserName');
 
@@ -101,6 +101,7 @@ export default function Profile() {
               onChange={e => setPromotionalCode(e.target.value)}
               />
 
+              <input type="file" class="custom-file-input" />
               <button className="button" type="submit">Submeter o pedido</button>
             </form>
           </div>
