@@ -27,11 +27,14 @@ export default function Logon() {
 
       history.push('/company/profile');
 
-    } catch (err) {
-        const response = await api.post('/sessions', { username, password });
+      finally{
+        const response = await api.post('/sessions', { email, password });
 
-      //alert('Falha no login, tente novamente.');
-      history.push('/freelancer/profile');
+        history.push('/freelancer/profile');
+      }
+    } catch (err) {
+
+      alert('Falha no login, tente novamente.');
     }
   }
     return (
