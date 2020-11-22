@@ -20,20 +20,24 @@
 }
 
 .card-sign-up {
+    width: 100vh;
+    max-width: 1080px;
     font-family: 'Nunito', sans-serif;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    height: 400px;
+    height: 22rem;
+    position: relative;
 
     background: #f0f0f5;
-    border-radius: 2px;
+    border-radius: 1rem;
     
     margin: 1rem 28rem;
 }
 
 
 .card-sign-up-body {
+    width: 100%;
+    max-width: 1080px;
     font-family: 'Nunito', sans-serif;
     justify-content: center;
     align-items: center;
@@ -52,16 +56,16 @@
     align-items: center;
     text-align: center;
     margin: 4.4rem;
-    font: 10pt normal;
+    font: 12pt normal;
     color: #41414d;
 }
 
 .card-sign-up-body a{
     margin: 6.4rem;
     width: 50%;
-    height: 30px;
+    height: 2rem;
     background: #6920B0;
-    border-radius: 25px;
+    border-radius: 5rem;
     color: #fff;
     line-height: 30px;
     display: inline-block;
@@ -87,3 +91,11 @@
 a {
     text-decoration: none;
 }
+
+@media (min-width: 700px){
+    .page-sign-up, .page-sign-up-body {
+        display: block;
+        margin: 0; 
+    }
+}
+

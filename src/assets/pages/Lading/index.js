@@ -36,31 +36,36 @@ function Lading() {
     </div>
 
     <div className="page-lading-content">
-      <nav>
-        <ul>
-          <li>
-            <Link to="/HowItWorks">
-            Como funciona
-            </Link>
-          </li>
-          <li>
-            <Link to="/logon">
-            Entrar
-            </Link>
-          </li>
-          <li className="link-register">
-            <Link to="/sign" >
-            Cadastrar-se
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="menu-toggle">
+        <div className="one"></div>
+        <div className="two"></div>
+        <div className="three"></div>
+      </div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/HowItWorks">
+              Como funciona
+              </Link>
+            </li>
+            <li>
+              <Link to="/logon">
+              Entrar
+              </Link>
+            </li>
+            <li className="link-register">
+              <Link to="/sign" >
+              Cadastrar-se
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-      <img src={ladingImg}
-      className="lading-image"
-      alt="um novo conceito de trabalho"
-      />
-    </div>
+        <img src={ladingImg}
+        className="lading-image"
+        alt="um novo conceito de trabalho"
+        />
+      </div>
   </div>
   <Footer />
   </div>

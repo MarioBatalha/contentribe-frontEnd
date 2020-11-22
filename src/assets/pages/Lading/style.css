@@ -5,6 +5,12 @@
     display: flex;
     margin: 2rem 5rem;
     color: #C2C2C2, #F29D35, #6920B0;
+    max-width: 1080px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
 }
 
 .container strong {
@@ -41,6 +47,7 @@
     display: flex;
     justify-content: center;
     margin: 3.2rem 0;
+    height: auto;
 }
 
 .buttons-container a {
@@ -78,11 +85,17 @@
     font-size: 18pt;
 }
 
+.page-lading-content {
+    right: 20px;
+}
+
 
 .page-lading-content nav {
     position: relative;
     float: right;
     margin-right: 8rem;
+    margin-top: 1rem;
+    max-width: 1080px;
 }
 
 .page-lading-content ul {
@@ -122,9 +135,9 @@
     height: 700px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 700px) {
     #page-lading {
-        max-width: 1100px;
+        max-width: 1080px;
         display: grid;
         grid-auto-rows: 350px 1px;
         grid-template-columns: 2fr 1fr 1fr;
@@ -154,8 +167,143 @@
     }
 
     .buttons-container a {
-        font-size: 2.4rem;
+        margin: 0;
     }
 
+
+    .buttons-container a .project {
+        margin-top: 4rem;
+    }
+
+    @media (max-width: 768px){
+        .one,
+        .two,
+        .three {
+            background-color: #6920B0;
+            height: 5px;
+            width: 100%;
+            margin: 6px auto;
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+        } 
+        
+            
+    }
+
+
+    @media (max-width: 630px){
+        .buttons-container {
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           position: relative;
+           flex-direction: row;
+           display: block;
+           margin-bottom: 20rem;
+        }
+    
+        .buttons-container a {
+            text-align: center;
+            font-size: 1rem;
+        }
+    
+    }
+    
+    @media (max-width: 540px) {
+        .page-lading-content {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .buttons-container {
+            position: relative;
+            flex-direction: row;
+            display: block;
+            margin-bottom: 20rem;
+            font-size: auto;
+         }
+         
+        nav {
+            display: none;
+        }
+
+        .page-lading-content img {
+            visibility: hidden;
+        }
+
+        .one,
+        .two,
+        .three {
+            background-color: #6920B0;
+            height: 5px;
+            width: 100%;
+            margin: 6px auto;
+
+            transition: 03s;
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+            margin-top: 1rem;
+        }
+
+        /* full screen */
+        .page-lading-content.on {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            widows: 100vw;
+            height: 100vh;
+
+            background-color: #F29D35;
+            z-index: 10;
+        }
+
+        .page-lading-content.on nav {
+            display: block;
+        }
+
+        .page-lading-content.on .menu-toggle {
+            position: absolute;
+            right: 25px;
+            top: 15px;
+        }
+
+        .page-lading-content.on .menu-toggle .one {
+            transform: rotate(45deg) translate(7px, 7px)
+        }
+
+        .page-lading-content.on .menu-toggle .two {
+            opacity: 0;
+        }
+
+        .page-lading-content.on .menu-toggle .three {
+            transform: rotate(-45deg) translate(8px, -9px)
+        }
+
+        .page-lading-content nav ul{
+            text-align: center;
+            display: block;
+        }
+
+        .page-lading-content nav ul a {
+            transition: 0.5s;
+            font-size: 12px;
+            line-height: 2rem;
+            display: block;
+            color: #FFF;
+        }
+
+        .page-lading-content nav ul a:hover {
+            background-color: rgb(224, 133, 20);
+        }
+    }
 
 

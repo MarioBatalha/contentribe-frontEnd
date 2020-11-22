@@ -77,3 +77,11 @@ header .menu .menu-item{
     margin-bottom: 16px;
     color: #41414d;
 }
+
+@media screen and (max-width: 767px) {
+    .menu-container header {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

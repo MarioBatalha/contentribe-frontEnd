@@ -28,7 +28,10 @@ export default function Logon() {
       history.push('/company/profile');
 
     } catch (err) {
-      alert('Falha no login, tente novamente.')
+        const response = await api.post('/sessions', { username, password });
+
+      //alert('Falha no login, tente novamente.');
+      history.push('/freelancer/profile');
     }
   }
     return (
@@ -72,7 +75,7 @@ export default function Logon() {
        </form>
        </section>
        
-       <img src={Authentication} className="person" alt="person" />
+       <img src={Authentication} className="person" alt="person" id="logImg"/>
      </div> 
     )
 }

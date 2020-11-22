@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
 import './style.css';
 
 export default function SignUp() {
     return(
         <div className="page-sign-up">
-          <h1>Contentribe</h1>
+          <h1>Contentribe</h1>  
 
           <div className="card-sign-up">
              <div className="card-sign-up-body">
