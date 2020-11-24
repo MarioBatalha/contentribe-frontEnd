@@ -1,70 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Contentribe
 
-## Available Scripts
+Uma plataforma SaaS que facilita a organização, produção e gestão de conteúdos em um só lugar.
+As principais funcionalidades da plataforma são voltadas a permitir que empresários façam
+a gestão de conteúdos, e solicitem a criação dos mesmos através da plataforma.
+Organização: o contentribe permite com que os seus usuários organizem a produção de
 
-In the project directory, you can run:
+Esta aplicação foi desenvolvida usando HTML, CSS e JavaScript (ReactJS e NodeJS), a criatividade e metodologia aplicada no desenvolvimento, a usabilidade e design da aplicação final.
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Summary
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  - [Início](#Início)
+  - [Requisitos](#Requesitos)
+  - [Instalação](#Instalação)
+  - [Testes](#Test)
+  - [Deploy](#Deploy)
+  - [Padrão-a-seguir](#Padrão-a-seguir)
+  - [Autor](#Autor)
+  - [Tecnologias utilizadas](#Tecnologias-utilizadas)
 
-### `yarn test`
+## Início
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+Essas instruções fornecerão uma cópia do projeto em execução no
+sua máquina local para fins de desenvolvimento e teste. Ver deploy
+para obter notas sobre como rodar o projeto na sua máquina.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Requisitos
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O que você precisa para instalar a App e como instalá-lo.
 
-### `yarn eject`
+* **[Node v13.8.0](https://nodejs.org/en/)** - ou superior, instalado em seu computador.
+* **[Create React App](https://github.com/facebook/create-react-app)**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Instalação
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Instale as dependências do projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Execute o comando
 
-## Learn More
+    npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ou
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    yarn install
 
-### Code Splitting
+- Inicie o projeto com o comando.
+ 
+    npm start
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Ou
 
-### Analyzing the Bundle Size
+    yarn start
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+### Testes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Executes os testes executando os seguintes programas
 
-### Advanced Configuration
+    npmn test
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+## Deploy
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Não serão feitos deploy, por ser uma app de test.
 
-### `yarn build` fails to minify
+## Padrão a seguir
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  - [Contributor Covenant](https://www.contributor-covenant.org/) - Usei
+    para o Código de Conduta
+  - [Creative Commons](https://creativecommons.org/) - Licença
+  - Linter - Padrão de códificação
 
-id = 336a3661# contentribe-frontEnd
+
+## Autores
+
+  - **Mário Francisco Batalha Silva**  -
+    [Mário Batalha](https://github.com/MarioBatalha)
+
+
+## Tecnologias utilizadas
+
+  - ReactJS (react-router, axios, react-bootstrap, react-redux)
+  - Frameworks CSS
+  - Pré-processadores CSS (SCSS)
+  - HTML5
+  - Bibliotecas e APIs de Mapas (Google Maps API)

@@ -1,6 +1,7 @@
 
 
 //Menu strategy
+//Event handler to show and hide menu
     let show = true;
 
     const menuSection = document.querySelector(".page-lading-content");

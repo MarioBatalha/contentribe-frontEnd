@@ -19,28 +19,26 @@ import Report from '../src/assets/pages/Report';
 import Payment from '../src/assets/pages/Payment';
 
 
-export default function Routes() {
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route path="/" component={Lading} exact />
-                <Route path="/Logon" component={Logon} />
-                <Route path="/register/freelancer" component={RegisterFreelancer} />
-                <Route path="/register/company" component={RegisterCompany} />
+export default () => (
+    <BrowserRouter>
+        <Switch>
+            <Route path="/" component={Lading} exact />
+            <Route path="/Logon" component={Logon} />
+            <Route path="/register/freelancer" component={RegisterFreelancer} />
+            <Route path="/register/company" component={RegisterCompany} />
 
-                <Route path="/HowItWorks" component={HowItWorks} />
-                <Route path="/sign" component={Sign} />
-                <Route path="/email/confirmation" component={EmailConfirmation} />
-                <Route path="/freelancer/profile" component={ProfileFreelancer} />
-                <Route path="/company/profile" component={ProfileCompany} />
-                <Route path="/admin" component={ProfileAdmin} />
-                <Route path="/new/request" component={NewTask} />
-                <Route path="/profile" component={InfoProfileCompany} />
-                <Route path="/company/report" component={Report} />
-                <Route path="/company/hired" component={Hired} />
-                <Route path="/company/payment" component={Payment} />
-                <Route path="/notFound" component={NotFound} />
-            </Switch>
-        </BrowserRouter>
-    )
-}
+            <Route path="/HowItWorks" component={HowItWorks} />
+            <Route path="/sign" component={Sign} />
+            <Route path="/email/confirmation" component={EmailConfirmation} />
+            <Route path="/freelancer/profile" component={ProfileFreelancer} />
+            <Route path="/company/profile" component={ProfileCompany} />
+            <Route path="/admin" component={ProfileAdmin} />
+            <Route path="/new/request" component={NewTask} />
+            <Route path="/profile" component={InfoProfileCompany} />
+            <Route path="/company/report" component={Report} />
+            <Route path="/company/hired" component={Hired} />
+            <Route path="/company/payment" component={Payment} />
+            <Route path="/notFound" component={NotFound} />
+        </Switch>
+    </BrowserRouter>
+);

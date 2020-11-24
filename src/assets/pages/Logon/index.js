@@ -46,8 +46,9 @@ export default function Logon() {
            <div className="social-midia">
 
               <Link className="gmail" to="/notFound">
-              <FcGoogle  className="IconGoogle" />
-              Continuar com uma conta google </Link>
+                <FcGoogle  className="IconGoogle" />
+                Continuar com uma conta google 
+              </Link>
            </div>
 
           <p> Ou </p>

@@ -9,7 +9,7 @@ passport.use('provider', new OAuth2Strategy({
     callbackURL: 'https://www.example.com/auth/provider/callback'
   },
   function(accessToken, refreshToken, profile, done) {
-    User.findOrCreate( ..., function(err, user) {
+    User.findOrCreate( ... function(err, user) {
       done(err, user);
     });
   }
